@@ -34,11 +34,13 @@ namespace Trixit
         public static void PlayLevel(int index)
         {
             CurrentLevel = index;
+            CurrentLevelScore = 0;
             SceneManager.LoadScene(_levels[index]);
         }
         
         public static void Restart()
         {
+            TotalScore -= CurrentLevelScore;
             PlayLevel(CurrentLevel);
         }
     }
