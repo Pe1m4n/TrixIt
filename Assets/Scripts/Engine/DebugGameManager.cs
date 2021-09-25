@@ -112,7 +112,6 @@ public class DebugGameManager : MonoBehaviour
 
 	private void Update()
 	{
-		UpdateFire();
 		UpdateStateText();
 	}
 	#endregion
@@ -208,27 +207,6 @@ public class DebugGameManager : MonoBehaviour
 	}
 	#endregion
 
-	#region developer functionality
-	private void UpdateFire()
-	{
-		if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject()) return;
-
-		if (Input.GetButtonDown("Fire1"))
-		{
-			Rigidbody b = Instantiate(bulletType == BulletType.standart ? bulletPrefab : explosivePrefab);
-			b.transform.position = mainCamera.transform.position;
-			b.mass = bulletMass;
-			// 100% нужен рефактор
-			if (bulletType == BulletType.explosive || bulletType == BulletType.forceplosive) b.GetComponent<ExplosiveController>().explosionType = bulletType == BulletType.explosive ? ExplosionType.enlarging : ExplosionType.forceBased;
-			if (bulletType == BulletType.explosive || bulletType == BulletType.forceplosive) b.GetComponent<ExplosiveController>().explosionDiameter = explosionDiameter;
-			if (bulletType == BulletType.explosive) b.GetComponent<ExplosiveController>().explosionSpeed = explosionSpeed;
-			if (bulletType == BulletType.forceplosive) b.GetComponent<ExplosiveController>().explosionForce = explosionForce;
-			if (bulletSpeed < 10) b.GetComponent<SelfDestructor>().timeOfMyLife = 10 * b.GetComponent<SelfDestructor>().timeOfMyLife / bulletSpeed;
-			if (bulletType != BulletType.standart || !bulletDisappear) Destroy(b.GetComponent<SelfDestructOnHit>());
-			b.AddForce(mainCamera.ScreenPointToRay(Input.mousePosition).direction * bulletSpeed, ForceMode.VelocityChange);
-		}
-	}
-	#endregion
 
 	#region UI
 	private void UpdateStateText()
