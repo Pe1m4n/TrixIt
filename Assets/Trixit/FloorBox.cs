@@ -34,7 +34,7 @@ namespace Trixit
             }
             
             var animator = other.collider.gameObject.GetComponent<Animator>();
-            animator.SetTrigger("Jump");
+            animator.SetTrigger("JumpBox");
         }
     }
 
