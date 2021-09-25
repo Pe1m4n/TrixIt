@@ -6,7 +6,8 @@ namespace Trixit
     {
         [SerializeField] private Transform _shootingPivot;
         [SerializeField] private Camera _camera;
-        [SerializeField] private Projectile _projectilePrefab;
+        [SerializeField] private Projectile _jumpProjectile;
+        [SerializeField] private Projectile _concreteProjectile;
         
         private void Update()
         {
@@ -33,7 +34,7 @@ namespace Trixit
         private void ShootAt(Vector3 position, BoxType turnInto)
         {
             var direction = (position - _shootingPivot.position).normalized;
-            var projectile = Instantiate(_projectilePrefab, _shootingPivot.position, Quaternion.LookRotation(direction));
+            var projectile = Instantiate(turnInto == BoxType.Jumpy? _jumpProjectile :_concreteProjectile, _shootingPivot.position, Quaternion.LookRotation(direction));
             projectile.Init(turnInto, StateHolder.Instance.PlayerState);
         }
     }
