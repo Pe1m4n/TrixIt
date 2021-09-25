@@ -2307,6 +2307,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5293010409668718395, guid: b09264b6a434b0d4ea2d42bcf96a997b, type: 3}
   m_PrefabInstance: {fileID: 657281108}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &657281114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657281110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b4bdc5ddd10421685f626db5f91e6db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpMaterial: {fileID: 2100000, guid: f38b18a45d2e9e849a116307270438c6, type: 2}
+  ConcreteMaterial: {fileID: 2100000, guid: 1b381c8715652e545afea4e94b9d106f, type: 2}
 --- !u!1 &729775555
 GameObject:
   m_ObjectHideFlags: 0
@@ -2749,7 +2763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b349ddd4aa6f4ae6b88cf8ca4b4d8179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoxType: 0
+  BoxType: 1
   Immutable: 0
   AnglesFromForward: 0.5
   JumpForce: 11
@@ -4283,6 +4297,7 @@ GameObject:
   - component: {fileID: 1360338896}
   - component: {fileID: 1360338895}
   - component: {fileID: 1360338898}
+  - component: {fileID: 1360338899}
   m_Layer: 0
   m_Name: SimpleCube (4)
   m_TagString: Untagged
@@ -4382,6 +4397,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1360338899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360338893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b349ddd4aa6f4ae6b88cf8ca4b4d8179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoxType: 1
+  Immutable: 0
+  AnglesFromForward: 0.5
+  JumpForce: 11
+  ForceMode: 2
+  DestroyTime: 2
 --- !u!1 &1366640962
 GameObject:
   m_ObjectHideFlags: 0
@@ -6771,6 +6804,7 @@ GameObject:
   - component: {fileID: 1830165862}
   - component: {fileID: 1830165861}
   - component: {fileID: 1830165864}
+  - component: {fileID: 1830165865}
   m_Layer: 0
   m_Name: SimpleCube 2 (6)
   m_TagString: Untagged
@@ -6870,6 +6904,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1830165865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830165859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b349ddd4aa6f4ae6b88cf8ca4b4d8179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoxType: 1
+  Immutable: 0
+  AnglesFromForward: 0.5
+  JumpForce: 11
+  ForceMode: 2
+  DestroyTime: 2
 --- !u!1 &1895814795
 GameObject:
   m_ObjectHideFlags: 0
@@ -6883,6 +6935,7 @@ GameObject:
   - component: {fileID: 1895814798}
   - component: {fileID: 1895814797}
   - component: {fileID: 1895814800}
+  - component: {fileID: 1895814801}
   m_Layer: 0
   m_Name: SimpleCube (3)
   m_TagString: Untagged
@@ -6982,6 +7035,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1895814801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895814795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b349ddd4aa6f4ae6b88cf8ca4b4d8179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoxType: 1
+  Immutable: 0
+  AnglesFromForward: 0.5
+  JumpForce: 11
+  ForceMode: 2
+  DestroyTime: 2
 --- !u!1 &1901924560
 GameObject:
   m_ObjectHideFlags: 0

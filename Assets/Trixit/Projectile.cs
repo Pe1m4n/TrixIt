@@ -22,6 +22,11 @@ namespace Trixit
         
         private void OnTriggerEnter(Collider other)
         {
+            if (other.gameObject.layer == LayerMask.NameToLayer("Character"))
+            {
+                return;
+            }
+            
             if (!other.gameObject.TryGetComponent<FloorBox>(out var box) || box.BoxType == _turnInto || box.Immutable)
             {
                 Destroy(gameObject);
