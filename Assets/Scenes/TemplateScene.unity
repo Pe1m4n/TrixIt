@@ -1473,6 +1473,14 @@ PrefabInstance:
       propertyPath: rotateAlways
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8732210846687580344, guid: 75b8e913174e4c54584af7328a7010e6, type: 3}
+      propertyPath: m_RendererIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8732210846687580344, guid: 75b8e913174e4c54584af7328a7010e6, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75b8e913174e4c54584af7328a7010e6, type: 3}
 --- !u!114 &562369356 stripped
@@ -2549,6 +2557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BoxType: 1
   JumpForce: 600
+  ForceMode: 0
 --- !u!1 &889181630
 GameObject:
   m_ObjectHideFlags: 0
