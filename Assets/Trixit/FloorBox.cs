@@ -34,9 +34,8 @@ namespace Trixit
                 return;
             }
 
-            
             var rb = other.collider.gameObject.GetComponent<Rigidbody>();
-            rb.AddForce(transform.up * JumpForce);
+            rb.AddForce(other.collider.transform.up * JumpForce, ForceMode.Impulse);
         }
     }
 
