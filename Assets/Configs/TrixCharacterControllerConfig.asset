@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9eea4526c698c54ea39587e4a8e2763, type: 3}
+  m_Name: TrixCharacterControllerConfig
+  m_EditorClassIdentifier: 
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 513
+  animFulcrumRagdollTreshold: 0.5
+  animsToAutojumpFrom: []
+  autoLandingSpeedThreshold: 5
+  jumpRotationLimit: 360
+  jumpOffForwardDetectionOffset: 0.2
+  amountOfIntervalsToCalcSlopeAngle: 10
+  thresholdTimeToFallFromWallHit: 0.1
+  thresholdSpeedToFallFromWallHit: 5
+  thresholdSlopeAngleToFallFromWallHit: 45
+  logWallHitSuccess: 1
+  logWallHitFail: 0
+  WallHitParabolaHeightOffset: 0.8
+  actionAnimProp: Action
+  startJumpAnimProp: startJump
+  inJumpAnimProp: InJump
+  boringAnimProp: boring
+  boringAnimName: Boring Animation
+  boringIdAnimProp: boringId
+  idleAnimName: Idle
+  freeLandingAnimProp: 
+  fulcrumLossCustomHandlingAnimProp: FulcrumLossCustomHandling
+  startHeightFallAnimProp: StartHeightFall
+  jumpOffForwardDetectionOffsetAnimProp: jumpOffDetectedAlt
+  jumpOffDetectionAnimProp: feetDetectedAlt
+  estimatedLandspeedAnimProp: estimatedLandSpeed
+  estimatedTimeToLandAnimProp: estimatedTimeToLand
+  slopeAngleAnimProp: slopeAngle
+  startRunAnimNames:
+  - Run_Start_Turn_Left
+  - Run_Start_Turn_Right
+  - Run_Fast_Turn_Left
+  - Run_Fast_Turn_Right
+  animLayer: 0
+  jumpAnimNames:
+  - Jump From Stand
+  - Jump From Run
+  - Jump From FastRun
+  - Medium Landing
+  - Hard Landing
+  - Jump Flight
+  - Standart Landing
+  animsToDisableJumpInput:
+  - Jump From Stand
+  - Jump From Run
+  - Jump From FastRun
+  - Jump Flight
+  - Crash Landing
+  - Descent Run L
+  rmOnlyOnGroundAnims:
+  - Stand Landing
+  - Medium Landing
+  - Hard Landing
+  - Light Landing
+  - Descent Run Landing L
+  - Descent Run Landing R
+  neverRmAnims:
+  - Jump Flight
+  - Flight Standing
+  - Crash Landing
+  - Descent Run L
+  - Descent Run R
+  - Levitation
+  - LevitationTest
+  - Jetpack
+  - 1d Glider Blend
+  - Glider_noblend_test_normal
+  - Glider_noblend_test_dive
+  doNotAffectRm:
+  - Jump From Stand
+  - Jump From Run
+  - Jump From FastRun
+  timeToLandingAnimProp: timeToLanding
+  stickIntensiveAnimProp: StickIntensive
+  animProgressAnimProp: AnimProgress
+  freemovementAnimProp: Freemovement
+  fastRunAnimProp: FastRun
+  angleForStartRunAnimProp: AngleFromInitialDirection
+  horizontalAnimProp: Horizontal
+  verticalAnimProp: Vertical
+  horizontalMlp: 10
+  horAxis: Horizontal
+  verAxis: Vertical
+  jumpBtn: Jump
+  actionBtn: Action
+  sprintBtn: Sprint
+  crouchBtn: Crouch
+  getPropBtn: GetProp
+  dropPropBtn: DropProp
+  turnSpeeds2:
+  - AnimationName: Idle
+    RotationSpeed: 0
+  - AnimationName: Run
+    RotationSpeed: 1000
+  - AnimationName: Run_Fast
+    RotationSpeed: 1000
+  - AnimationName: Jump From Stand
+    RotationSpeed: 360
+  - AnimationName: Jump From Run
+    RotationSpeed: 360
+  - AnimationName: Jump From FastRun
+    RotationSpeed: 360
+  - AnimationName: Medium Landing
+    RotationSpeed: 360
+  - AnimationName: Hard Landing
+    RotationSpeed: 360
+  - AnimationName: Standart Landing
+    RotationSpeed: 360
+  - AnimationName: Jump Flight
+    RotationSpeed: 360
+  - AnimationName: Run_Fast Slowdown
+    RotationSpeed: 100000
+  - AnimationName: Run_Start
+    RotationSpeed: 100000
+  - AnimationName: Run_Stop
+    RotationSpeed: 10000
+  turnToCamSpeeds:
+  - AnimationName: Action List
+    RotationSpeed: 10
+  - AnimationName: Levitation
+    RotationSpeed: 10
+  - AnimationName: 1d Glider Blend
+    RotationSpeed: 5
+  - AnimationName: Glider_noblend_test_normal
+    RotationSpeed: 1
+  - AnimationName: Glider_noblend_test_dive
+    RotationSpeed: 1
+  runForwardUpdSpeed2: 5
+  runTurnUpdSpeed2: 5
+  crouchForwardUpdSpeed2: 5
+  crouchTurnUpdSpeed2: 5
+  strafeUpdSpeed2: 5
+  boringTime: 2
+  boringVariantsNum: 3
+  camFolowTimeout: 0.5
+  animsForCamToFollow:
+  - ded_run
+  - ded_run_fast
+  - jump_forward_2_start_stand_1
+  - jump_forward_2_start_stand_2
+  - jump_forward_2_start_run
+  - jump_forward_2_middle
+  - jump_forward_2_finish
+  camOffsetBeforeFollow: 1
+  animsToRotateWithLimits:
+  - anims:
+    - jump_forward_2_start_run
+    - jump_forward_2_start_stand_1
+    - jump_forward_2_start_stand_2
+    - jump_forward_2_middle
+    - jump_forward_2_finish
+    maximumRotationAngle: 45
+  animationOffsets:
+  - animBefore: jump_forward_2_finish
+    animAfter: ded_idle
+    offset: {x: -0.045, y: 0, z: -0.045}

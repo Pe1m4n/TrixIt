@@ -1,0 +1,905 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8946220524493792283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8946220524493792282}
+  - component: {fileID: 8946220524493792289}
+  - component: {fileID: 8946220524493792286}
+  - component: {fileID: 8946220524493792287}
+  - component: {fileID: 8946220524493792284}
+  - component: {fileID: 8946220524493792285}
+  m_Layer: 0
+  m_Name: Puppet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8946220524493792282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8946220524493792283}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8946220524493792289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8946220524493792283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1efacf79ab4214e85aeebfd07064c20f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puppetMaster: {fileID: 0}
+  deactivated: 0
+  masterProps:
+    normalMode: 0
+    mappingBlendSpeed: 15
+    activateOnStaticCollisions: 0
+    activateOnImpulse: 1
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 513
+  collisionLayers:
+    serializedVersion: 2
+    m_Bits: 6145
+  collisionThreshold: 0
+  collisionResistance:
+    mode: 0
+    floatValue: 100
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 800.5782
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 4.976678
+        value: 1200.3759
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    tooltip: Smaller value means more unpinning from collisions so the characters
+      get knocked out more easily. If using a curve, the value will be evaluated
+      by each muscle's target velocity magnitude. This can be used to make collision
+      resistance higher while the character moves or animates faster.
+  collisionResistanceMultipliers: []
+  maxCollisions: 30
+  regainPinSpeed: 1
+  boostFalloff: 1
+  defaults:
+    unpinParents: 0.2
+    unpinChildren: 0.6
+    unpinGroup: 0
+    unpinSelf: 1
+    minMappingWeight: 0
+    maxMappingWeight: 1
+    minPinWeight: 0
+    disableColliders: 0
+    regainPinSpeed: 1
+    regainInvinciblePinSpeed: 1
+    collisionResistance: 1
+    knockOutDistance: 1.5
+    puppetMaterial: {fileID: 13400000, guid: 187d6405a8cda9142a8db2f75adcb9f4, type: 2}
+    unpinnedMaterial: {fileID: 13400000, guid: d4563de398e2c4412a95f4317ddf4b1a, type: 2}
+  groupOverrides:
+  - name: Head
+    groups: 02000000
+    props:
+      unpinParents: 0.7
+      unpinChildren: 0
+      unpinGroup: 0
+      unpinSelf: 1
+      minMappingWeight: 0
+      maxMappingWeight: 1
+      minPinWeight: 0
+      disableColliders: 0
+      regainPinSpeed: 1
+      regainInvinciblePinSpeed: 1
+      collisionResistance: 1
+      knockOutDistance: 1.5
+      puppetMaterial: {fileID: 0}
+      unpinnedMaterial: {fileID: 0}
+  - name: LeftArm, LeftHand
+    groups: 0300000004000000
+    props:
+      unpinParents: 0.8
+      unpinChildren: 0.4
+      unpinGroup: 0.2
+      unpinSelf: 1
+      minMappingWeight: 1
+      maxMappingWeight: 1
+      minPinWeight: 0
+      disableColliders: 0
+      regainPinSpeed: 1
+      regainInvinciblePinSpeed: 1
+      collisionResistance: 0.8
+      knockOutDistance: 1.5
+      puppetMaterial: {fileID: 0}
+      unpinnedMaterial: {fileID: 0}
+  - name: Hips
+    groups: 00000000
+    props:
+      unpinParents: 0
+      unpinChildren: 0.15
+      unpinGroup: 0
+      unpinSelf: 1
+      minMappingWeight: 0
+      maxMappingWeight: 1
+      minPinWeight: 0
+      disableColliders: 0
+      regainPinSpeed: 1
+      regainInvinciblePinSpeed: 5
+      collisionResistance: 2
+      knockOutDistance: 1.5
+      puppetMaterial: {fileID: 0}
+      unpinnedMaterial: {fileID: 0}
+  - name: LeftFoot
+    groups: 06000000
+    props:
+      unpinParents: 0.5
+      unpinChildren: 0
+      unpinGroup: 0
+      unpinSelf: 1
+      minMappingWeight: 0
+      maxMappingWeight: 1
+      minPinWeight: 0
+      disableColliders: 0
+      regainPinSpeed: 1
+      regainInvinciblePinSpeed: 10
+      collisionResistance: 1
+      knockOutDistance: 1.5
+      puppetMaterial: {fileID: 0}
+      unpinnedMaterial: {fileID: 0}
+  - name: Prop
+    groups: 08000000
+    props:
+      unpinParents: 0.5
+      unpinChildren: 1
+      unpinGroup: 0
+      unpinSelf: 1
+      minMappingWeight: 1
+      maxMappingWeight: 1
+      minPinWeight: 0
+      disableColliders: 0
+      regainPinSpeed: 4
+      regainInvinciblePinSpeed: 4
+      collisionResistance: 2
+      knockOutDistance: 1.5
+      puppetMaterial: {fileID: 0}
+      unpinnedMaterial: {fileID: 0}
+  - name: RightArm, RightHand
+    groups: 090000000a000000
+    props:
+      unpinParents: 0.8
+      unpinChildren: 0.4
+      unpinGroup: 0.2
+      unpinSelf: 1
+      minMappingWeight: 1
+      maxMappingWeight: 1
+      minPinWeight: 0
+      disableColliders: 0
+      regainPinSpeed: 1
+      regainInvinciblePinSpeed: 1
+      collisionResistance: 0.8
+      knockOutDistance: 1.5
+      puppetMaterial: {fileID: 0}
+      unpinnedMaterial: {fileID: 0}
+  - name: LeftLeg
+    groups: 05000000
+    props:
+      unpinParents: 0.3
+      unpinChildren: 0.5
+      unpinGroup: 0.2
+      unpinSelf: 1
+      minMappingWeight: 0
+      maxMappingWeight: 1
+      minPinWeight: 0
+      disableColliders: 0
+      regainPinSpeed: 0.5
+      regainInvinciblePinSpeed: 10
+      collisionResistance: 1
+      knockOutDistance: 1.5
+      puppetMaterial: {fileID: 0}
+      unpinnedMaterial: {fileID: 0}
+  - name: RightLeg
+    groups: 0b000000
+    props:
+      unpinParents: 0.3
+      unpinChildren: 0.5
+      unpinGroup: 0.2
+      unpinSelf: 1
+      minMappingWeight: 0
+      maxMappingWeight: 1
+      minPinWeight: 0
+      disableColliders: 0
+      regainPinSpeed: 1
+      regainInvinciblePinSpeed: 10
+      collisionResistance: 1
+      knockOutDistance: 1.5
+      puppetMaterial: {fileID: 0}
+      unpinnedMaterial: {fileID: 0}
+  - name: RightFoot
+    groups: 0c000000
+    props:
+      unpinParents: 0.5
+      unpinChildren: 0
+      unpinGroup: 0
+      unpinSelf: 1
+      minMappingWeight: 0
+      maxMappingWeight: 1
+      minPinWeight: 0
+      disableColliders: 0
+      regainPinSpeed: 1
+      regainInvinciblePinSpeed: 10
+      collisionResistance: 1
+      knockOutDistance: 1.5
+      puppetMaterial: {fileID: 0}
+      unpinnedMaterial: {fileID: 0}
+  - name: RightUpLeg
+    groups: 0e000000
+    props:
+      unpinParents: 0.3
+      unpinChildren: 0.5
+      unpinGroup: 0.2
+      unpinSelf: 1
+      minMappingWeight: 0
+      maxMappingWeight: 1
+      minPinWeight: 0
+      disableColliders: 0
+      regainPinSpeed: 1
+      regainInvinciblePinSpeed: 10
+      collisionResistance: 1
+      knockOutDistance: 1.5
+      puppetMaterial: {fileID: 0}
+      unpinnedMaterial: {fileID: 0}
+  - name: LeftUpLeg
+    groups: 0d000000
+    props:
+      unpinParents: 0.3
+      unpinChildren: 0.5
+      unpinGroup: 0.2
+      unpinSelf: 1
+      minMappingWeight: 0
+      maxMappingWeight: 1
+      minPinWeight: 0
+      disableColliders: 0
+      regainPinSpeed: 1
+      regainInvinciblePinSpeed: 10
+      collisionResistance: 1
+      knockOutDistance: 1.5
+      puppetMaterial: {fileID: 0}
+      unpinnedMaterial: {fileID: 0}
+  - name: Spine
+    groups: 01000000
+    props:
+      unpinParents: 0.1
+      unpinChildren: 0.2
+      unpinGroup: 0
+      unpinSelf: 1
+      minMappingWeight: 0
+      maxMappingWeight: 1
+      minPinWeight: 0
+      disableColliders: 0
+      regainPinSpeed: 3
+      regainInvinciblePinSpeed: 10
+      collisionResistance: 1.4
+      knockOutDistance: 1.5
+      puppetMaterial: {fileID: 0}
+      unpinnedMaterial: {fileID: 0}
+  useEventInsteadOfStateSwitching: 1
+  knockOutDistance: 0.1
+  unpinnedMuscleWeightMlp: 1
+  maxRigidbodyVelocity: Infinity
+  pinWeightThreshold: 1
+  unpinnedMuscleKnockout: 1
+  dropProps: 1
+  canGetUp: 1
+  getUpDelay: 0.05
+  blendToAnimationTime: 10
+  maxGetUpVelocity: 0.4
+  minGetUpDuration: 1.7
+  getUpCollisionResistanceMlp: 1.2
+  getUpRegainPinSpeedMlp: 0.6
+  getUpKnockOutDistanceMlp: 1
+  getUpOffsetProne: {x: 0, y: 0, z: 0}
+  getUpOffsetSupine: {x: 0, y: 0, z: 0}
+  holdPositionWhileGetUp: 0
+  invincibilityPinRegainSpeed: 10
+  invincibilityPinMax: 1
+  invincibilityMuscleRegainSpeed: 1000
+  invincibilityMuscleMax: 1
+  onBonesTooFar:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8946220524493792287}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BonesTooFarHandler
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onGetUpProne:
+    switchToBehaviour: 
+    animations:
+    - animationState: Stand Up Prone
+      crossfadeTime: 0.2
+      layer: 0
+      resetNormalizedTime: 1
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8946220524493792287}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: OnGetUpEvent
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  onGetUpSupine:
+    switchToBehaviour: 
+    animations:
+    - animationState: Stand Up Supine
+      crossfadeTime: 0.2
+      layer: 0
+      resetNormalizedTime: 1
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8946220524493792287}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: OnGetUpEvent
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  onLoseBalance:
+    switchToBehaviour: 
+    animations:
+    - animationState: Fall
+      crossfadeTime: 0.7
+      layer: 0
+      resetNormalizedTime: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  onLoseBalanceFromPuppet:
+    switchToBehaviour: 
+    animations: []
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  onLoseBalanceFromGetUp:
+    switchToBehaviour: 
+    animations: []
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  onRegainBalance:
+    switchToBehaviour: 
+    animations: []
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  onLeaveUnpinned:
+    switchToBehaviour: 
+    animations: []
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8946220524493792287}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: OnLeaveUnpinnedEvent
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  canMoveTarget: 1
+--- !u!114 &8946220524493792286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8946220524493792283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5951cbfbce806ca418125f63986e3fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterAnimator: {fileID: 0}
+  characterTransform: {fileID: 0}
+  characterCollider: {fileID: 0}
+  characterFootCollider: {fileID: 0}
+  characterRigidbody: {fileID: 0}
+  puppetMaster: {fileID: 0}
+  getUpAim: {fileID: 0}
+  Hips: {fileID: 0}
+  LeftUpLeg: {fileID: 0}
+  LeftLeg: {fileID: 0}
+  LeftFoot: {fileID: 0}
+  RightUpLeg: {fileID: 0}
+  RightLeg: {fileID: 0}
+  RightFoot: {fileID: 0}
+  Spine: {fileID: 0}
+  Head: {fileID: 0}
+  LeftArm: {fileID: 0}
+  LeftForeArm: {fileID: 0}
+  LeftHand: {fileID: 0}
+  RightArm: {fileID: 0}
+  RightForeArm: {fileID: 0}
+  RightHand: {fileID: 0}
+  HipsCollider: {fileID: 0}
+  LeftUpLegCollider: {fileID: 0}
+  LeftLegCollider: {fileID: 0}
+  LeftFootCollider: {fileID: 0}
+  RightUpLegCollider: {fileID: 0}
+  RightLegCollider: {fileID: 0}
+  RightFootCollider: {fileID: 0}
+  SpineCollider: {fileID: 0}
+  HeadCollider: {fileID: 0}
+  LeftArmCollider: {fileID: 0}
+  LeftForeArmCollider: {fileID: 0}
+  LeftHandCollider: {fileID: 0}
+  RightArmCollider: {fileID: 0}
+  RightForeArmCollider: {fileID: 0}
+  RightHandCollider: {fileID: 0}
+  Rigidbodies: []
+  Colliders: []
+--- !u!114 &8946220524493792287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8946220524493792283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cba0df3257ab7648a2891a6824668f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partsDictionary: {fileID: 8946220524493792286}
+  balanceWatcher: {fileID: 8946220524493792284}
+  puppetBehaviour: {fileID: 8946220524493792289}
+  startHitAnimProp: StartHit
+  directionAnimProp: _Direction
+  xPosAnimProp: _xPos
+  yPosAnimProp: _yPos
+  forceAnimProp: _Force
+  startFallAnimProp: StartFall
+  fallDirectionAnimProp: FallDirection
+  getUpDirectionAnimProp: StandUpDirection
+  mirrorActionAnimProp: mirrorActions
+  jumpFinishAnimProp: finishJump
+  inHitFallAnimProp: FallFromHit
+  isProneAnimProp: IsProne
+  noHitAnims:
+  - Jump From Stand
+  - Jump From Run
+  - Jump From FastRun
+  - Jump Flight
+  - Medium Landing
+  - Hard Landing
+  - Protective
+  hitAnimLayerIndex: 0
+  hitAnimStateNames:
+  - Short Hit Reaction
+  - Strong Hit Reaction
+  - Fall Back
+  - Fall Forward
+  - Fall Right
+  - Fall Left
+  hitTransitionNames:
+  - Short Hits -> IdleAnimations
+  - Middle Hits -> IdleAnimations
+  - IdleAnimations -> Short Hits
+  - IdleAnimations -> Middle Hits
+  fallAnimLayerIndex: 0
+  fallAnimStateNames:
+  - Fall Back
+  - Fall Forward
+  - Fall Right
+  - Fall Left
+  actionStateName: IdleAnimations
+  actionNumPropName: IdlePose
+  toActionTransitionName: Grounded Directional -> IdleAnimations
+  jumpMiddleStateName: jump_forward_2_middle
+  jumpFinishStateName: jump_forward_2_finish
+  fallFromHeightStateName: Fall Face
+  hitRegistrationCooldown: 0.5
+  useGetUpAim: 0
+  centerMassKnockoutDistance: 0.03
+  inAirCMKnockoutDistance: 0.275
+  cmKnockoutDistanceSpeedUp: 2.8
+  cmKnockoutDistanceSpeedDown: 0.2
+  beKinematicWhenNoHit: 1
+  kinematicKnockoutDistance: 0.5
+  kinematicLastHitMemory: 0.1
+  unpinnedMusclesValue: 0.5
+  absoluteOffsetMlp: 0
+  secondHitCheckTreshold: 1
+  hitUnpinPower: 0
+  denyToSmallHit: 5
+  smallToStrongHit: 30
+  strongHitToFall: 60
+  fallToInstantRagdoll: 150
+  instantRagdollCurrentCMTreshold: 150
+  smallToStrongHitAnimator: 0.5
+  hullMultiplier: 1
+  muscleUpSpeed: 0.5
+  muscleDownSpeed: 1.5
+  muscleIniRagUpSpeed: 0.5
+  muscleIniRagDownSpeed: 2
+  boosters:
+  - animStateName: IdleAnimations
+    isAction: 1
+    actionNumber: 13
+    booster:
+      fullBody: 0
+      muscles: []
+      groups: 04000000
+      immunity: 1
+      impulseMlp: 10
+      boostParents: 2
+      boostChildren: 2
+      delay: 0
+  - animStateName: IdleAnimations
+    isAction: 1
+    actionNumber: 14
+    booster:
+      fullBody: 0
+      muscles: []
+      groups: 040000000a0000000300000009000000
+      immunity: 1
+      impulseMlp: 20
+      boostParents: 3
+      boostChildren: 3
+      delay: 0
+  - animStateName: IdleAnimations
+    isAction: 1
+    actionNumber: 15
+    booster:
+      fullBody: 0
+      muscles: []
+      groups: 090000000a000000
+      immunity: 1
+      impulseMlp: 50
+      boostParents: 4
+      boostChildren: 4
+      delay: 0
+  - animStateName: IdleAnimations
+    isAction: 1
+    actionNumber: 16
+    booster:
+      fullBody: 0
+      muscles: []
+      groups: 090000000a000000
+      immunity: 1
+      impulseMlp: 100
+      boostParents: 6
+      boostChildren: 6
+      delay: 0
+  - animStateName: IdleAnimations
+    isAction: 1
+    actionNumber: 17
+    booster:
+      fullBody: 0
+      muscles: []
+      groups: 0b0000000c0000000e000000
+      immunity: 1
+      impulseMlp: 5
+      boostParents: 0
+      boostChildren: 0
+      delay: 0
+  - animStateName: IdleAnimations
+    isAction: 1
+    actionNumber: 18
+    booster:
+      fullBody: 0
+      muscles: []
+      groups: 0b0000000c000000
+      immunity: 1
+      impulseMlp: 10
+      boostParents: 1
+      boostChildren: 1
+      delay: 0
+  - animStateName: IdleAnimations
+    isAction: 1
+    actionNumber: 19
+    booster:
+      fullBody: 0
+      muscles: []
+      groups: 090000000b0000000c000000
+      immunity: 1
+      impulseMlp: 10
+      boostParents: 2
+      boostChildren: 2
+      delay: 0
+  - animStateName: IdleAnimations
+    isAction: 1
+    actionNumber: 21
+    booster:
+      fullBody: 0
+      muscles: []
+      groups: 0300000004000000
+      immunity: 1
+      impulseMlp: 10
+      boostParents: 0
+      boostChildren: 0
+      delay: 0
+  - animStateName: IdleAnimations
+    isAction: 1
+    actionNumber: 22
+    booster:
+      fullBody: 0
+      muscles: []
+      groups: 0300000004000000
+      immunity: 1
+      impulseMlp: 30
+      boostParents: 2
+      boostChildren: 2
+      delay: 0
+  - animStateName: IdleAnimations
+    isAction: 1
+    actionNumber: 23
+    booster:
+      fullBody: 0
+      muscles: []
+      groups: 0b0000000c000000
+      immunity: 1
+      impulseMlp: 40
+      boostParents: 2
+      boostChildren: 2
+      delay: 0
+  - animStateName: IdleAnimations
+    isAction: 1
+    actionNumber: 24
+    booster:
+      fullBody: 0
+      muscles: []
+      groups: 0b0000000c0000000e000000
+      immunity: 1
+      impulseMlp: 40
+      boostParents: 2
+      boostChildren: 2
+      delay: 0
+  - animStateName: IdleAnimations
+    isAction: 1
+    actionNumber: 25
+    booster:
+      fullBody: 0
+      muscles: []
+      groups: 04000000
+      immunity: 1
+      impulseMlp: 10
+      boostParents: 0
+      boostChildren: 0
+      delay: 0
+  debugPosVisualisation: {fileID: 0}
+  debugSafeCurcleVisualisation: {fileID: 0}
+  debugKinematicSafeCurcleVisualisation: {fileID: 0}
+  debugMlp: 170
+  LogDenies: 1
+--- !u!114 &8946220524493792284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8946220524493792283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7c9e49c9f35c04fb965b4ffa80e27d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugMass: 0
+  debugCenter: {x: 0, y: 0, z: 0}
+  debugProcessedContacts: []
+  debugMassCenterProcessed: {x: 0, y: 0}
+  debugMassCenterInsideConvexHull: 0
+  debugDistanceBetweenMassCenterAndConvexHull: 0
+  debugFallDirection: 0
+  debugMinIntersection: 0
+  debugMaxIntersection: 0
+  headDebug: {fileID: 0}
+  partsDictionary: {fileID: 8946220524493792286}
+  puppetBehaviour: {fileID: 8946220524493792289}
+  ExternalForce: {x: 0, y: 1, z: 0}
+  MaxOffsetMemoryTime: 0.2
+  doNotRegisterContacts:
+    serializedVersion: 2
+    m_Bits: 4096
+  predictionTime: 0.25
+  hitInitiators:
+    serializedVersion: 2
+    m_Bits: 4096
+  hitInitiatorsOnFulcrums:
+    serializedVersion: 2
+    m_Bits: 4096
+  usePointEnlargement: 1
+  pointEnlargementRadius: 0.1
+  pointEnlargementQuality: 6
+  pointsToCalcWeightedOffsetFromAnim:
+  - bodyPart: 3
+    multiplier: 1
+  - bodyPart: 6
+    multiplier: 1
+  - bodyPart: 0
+    multiplier: 1
+  - bodyPart: 7
+    multiplier: 1
+  - bodyPart: 8
+    multiplier: 1
+  bodyPartsToTraceOffsetFromCentralRod: 0a0000000d0000000200000005000000
+  layersToStandOn:
+    serializedVersion: 2
+    m_Bits: 513
+  stabilizationOffset: 0
+  actionsAnimProp: IdlePose
+  actionsAnimStateName: IdleAnimations
+  curvedActionsIds: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000
+  curvedAnimStatesNames:
+  - Grounded Directional
+  - jump_forward_2_start
+  - jump_forward_2_middle
+  - jump_forward_2_finish
+  - ded_idle
+  - ded_run
+  - Start_Run
+  - Stop_Run
+  - ded_run_fast
+  - Short Hits
+  distanceToGroundOffsetForward: 0.7
+  contactSetLifetime: 0.3
+  contactSetSkips: 5
+  logCollisions: 1
+  logCollisionImpulseFilter: 20
+  useLegacyFulcrumsCurves: 0
+  minContactsToCountFulcrumIn: 1
+  maxContactsToCountFulcrumIn: 2147483647
+  doVisualize: 0
+  visTransform: {fileID: 0}
+  visPointPrefab: {fileID: 5306359002227118496, guid: 8fe77b0652bfd104985e1848077256a8,
+    type: 3}
+  visLinePrefab: {fileID: 3459772318766720495, guid: d7520ce4a6627c7469c6c9a811f005aa,
+    type: 3}
+  hullLinePrefab: {fileID: 3459772318766720495, guid: b0116e39c0543f2459d4f1655ce93068,
+    type: 3}
+  visArrowPrefab: {fileID: 8069420120640502552, guid: e67430023ca6aeb43857d720c6da78da,
+    type: 3}
+  visOffset: {x: 1, y: 0.01, z: 0}
+  visScale: 1
+  visPointScale: 0.5
+  visMinDistanceBwHullPoints: 0.1
+  visLineNormal:
+    serializedVersion: 2
+    key0: {r: 0.039215688, g: 1, b: 0, a: 1}
+    key1: {r: 0.039215688, g: 1, b: 0, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  visLineFrozen:
+    serializedVersion: 2
+    key0: {r: 0.49519405, g: 0.96588695, b: 0.9811321, a: 1}
+    key1: {r: 0.49803922, g: 0.96862745, b: 0.9843137, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  offsetsText: {fileID: 0}
+--- !u!114 &8946220524493792285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8946220524493792283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 107ca1b6a75671e44833ab868b6a3542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partsDictionary: {fileID: 8946220524493792286}
+  puppetBehaviour: {fileID: 8946220524493792289}
+  balanceWatcher: {fileID: 8946220524493792284}
+  fallingBehaviourControl: {fileID: 8946220524493792287}
+  fulcrumRegainPinSpeed: 5
+  fulcrumReactionRegainPinSpeed: 15
+  fulcrumCollisionResistance: 8
+  fulcrumUnpinParents: 0.1
+  fulcrumUnpinChildren: 0.1
+  fulcrumUnpinGroup: 0.1
+  fulcrumUnpinSelf: 0.8
+  fulcrumKinshipBase: 0.3

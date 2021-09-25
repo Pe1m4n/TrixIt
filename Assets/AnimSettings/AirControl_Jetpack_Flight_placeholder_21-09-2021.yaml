@@ -1,0 +1,32 @@
+Animations:
+- Animation: Jetpack_Flight_placeholder
+  Intervals:
+  - Func_air:
+      #horizontal flight control
+      ControlForceEnabled: true
+      ForwardControlForce: 1000
+      BackControlForce: 1000
+      SideControlForce: 1000
+      ForwardControlForceSpeedLimit: 10
+      BackControlForceSpeedLimit: 10
+      SideControlForceSpeedLimit: 10
+      #vertical flight control
+      VerticalControlForceEnabled: true
+      UpControlForce: 3000
+      UpControlForceSpeedLimit: 20
+      DownControlForce: 1000
+      DownControlForceSpeedLimit: 10
+      #passive levitation forces
+      PassiveUpForce: 1000
+      PassiveUpForceSpeedLimit: 0
+      #passive side brakes
+      PassiveForwardForce: 200
+      PassiveForwardForceSpeedLimit: 0
+      PassiveBackForce: 200
+      PassiveBackForceSpeedLimit: 0
+      PassiveLeftForce: 200
+      PassiveLeftForceSpeedLimit: 0
+      PassiveRightForce: 200
+      PassiveRightForceSpeedLimit: 0
+      #
+      #This control mode needs YAW or script rotation fixes to turn properly!

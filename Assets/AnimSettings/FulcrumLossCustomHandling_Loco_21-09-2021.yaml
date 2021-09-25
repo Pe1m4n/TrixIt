@@ -1,0 +1,61 @@
+Animations:
+- Animation: ded_run_fast
+  Intervals:
+  - Func_self:
+      FulcrumLossCustomHandling: true
+- Animation: ded_run_fast_left
+  Intervals:
+  - Func_self:
+      FulcrumLossCustomHandling: true
+- Animation: ded_run_fast_right
+  Intervals:
+  - Func_self:
+      FulcrumLossCustomHandling: true
+- Animation: ded_start_run_back
+  Intervals:
+  - Func_self:
+      FulcrumLossCustomHandling: true
+- Animation: ded_start_run_back_135
+  Intervals:
+  - Func_self:
+      FulcrumLossCustomHandling: true
+- Animation: ded_start_run_right
+  Intervals:
+  - Func_self:
+      FulcrumLossCustomHandling: true
+- Animation: ded_start_run_left
+  Intervals:
+  - Func_self:
+      FulcrumLossCustomHandling: true
+- Animation: ded_start_run_back_225
+  Intervals:
+  - Func_self:
+      FulcrumLossCustomHandling: true
+- Animation: ded_start_run_back_179
+  Intervals:
+  - Func_self:
+      FulcrumLossCustomHandling: true
+- Animation: ded_start_run
+  Intervals:
+  - Func_self:
+      FulcrumLossCustomHandling: true
+- Animation: ded_start_run_stop
+  Intervals:
+  - Func_self:
+      FulcrumLossCustomHandling: true
+- Animation: ded_run_circle_left
+  Intervals:
+  - Func_self:
+      FulcrumLossCustomHandling: true
+- Animation: ded_run
+  Intervals:
+  - Func_self:
+      FulcrumLossCustomHandling: true
+- Animation: ded_run_circle_right
+  Intervals:
+  - Func_self:
+      FulcrumLossCustomHandling: true
+#- Animation: ded_idle
+#  Intervals:
+#  - Func_self:
+#      FulcrumLossCustomHandling: true

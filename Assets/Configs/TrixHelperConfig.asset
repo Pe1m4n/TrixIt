@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f91dba665e64104bbc1575545b093f3, type: 3}
+  m_Name: TrixHelperConfig
+  m_EditorClassIdentifier: 
+  characterAnimatorController: {fileID: 9100000, guid: 948da0a5c5574b24c979bfad4be09ff0,
+    type: 2}
+  characterBehaviourPrefab: {fileID: 8946220524493792283, guid: 9279e9b53586cca43890429546d2118b,
+    type: 3}
+  trixCharacterControllerConfig: {fileID: 11400000, guid: 23210f5513ea64145ab5f813530083d3,
+    type: 2}

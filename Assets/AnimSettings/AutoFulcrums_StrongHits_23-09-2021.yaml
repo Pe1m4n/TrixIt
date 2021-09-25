@@ -1,0 +1,375 @@
+Animations:
+- Animation: 0_trix_stronghit_front_head_24fps
+  Intervals:
+  - Start: 1
+    End: 8
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 16
+    End: 17
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 6
+    End: 17
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 0_trix_stronghit_front_chest_24FPS
+  Intervals:
+  - Start: 2
+    End: 15
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 22
+    End: 28
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 2
+    End: 6
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 13
+    End: 25
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 0_trix_stronghit_front_stomach_24fps
+  Intervals:
+  - Start: 1
+    End: 6
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 12
+    End: 23
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 13
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 20
+    End: 26
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 45_trix_stronghit_head_24FPS
+  Intervals:
+  - Start: 2
+    End: 9
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 22
+    End: 25
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 6
+    End: 17
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 315_trix_stronghit_frontleft_chest_24FPS
+  Intervals:
+  - Start: 1
+    End: 5
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 16
+    End: 27
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 7
+    End: 18
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 26
+    End: 31
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 45_trix_stronghit_forwardright_stomach_24FPS
+  Intervals:
+  - Start: 1
+    End: 6
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 17
+    End: 19
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 7
+    End: 16
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 90_trix_stronghit_sideright_head_24fps
+  Intervals:
+  - Start: 1
+    End: 7
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 7
+    End: 9
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 13
+    End: 16
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 90_trix_stronghit_sideright_stomach_24fps
+  Intervals:
+  - Start: 1
+    End: 7
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 4
+    End: 6
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 135_trix_stronghit_backright_head_24fps
+  Intervals:
+  - Start: 1
+    End: 7
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 7
+    End: 18
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 135_trix_hit_back_Diag_chest_middle_mirror
+  Intervals:
+  - Start: 5
+    End: 21
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 2
+    End: 3
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 16
+    End: 21
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 135_trix_hit_back_Diag_stomach_middle
+  Intervals:
+  - Start: 1
+    End: 5
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 6
+    End: 18
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 180_trix_hit_back_head_middle
+  Intervals:
+  - Start: 1
+    End: 3
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 12
+    End: 17
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 4
+    End: 10
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 180_trix_hit_back_chest_middle
+  Intervals:
+  - Start: 1
+    End: 3
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 13
+    End: 20
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 4
+    End: 14
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 180_trix_hit_back_stomach_middle
+  Intervals:
+  - Start: 1
+    End: 4
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 12
+    End: 22
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 5
+    End: 7
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 14
+    End: 16
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 225_trix_hit_back_Diag_head_middle_mirror
+  Intervals:
+  - Start: 7
+    End: 18
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 7
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 17
+    End: 18
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 225_trix_stronghit_backleft_chest_24fps
+  Intervals:
+  - Start: 1
+    End: 3
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 16
+    End: 21
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 5
+    End: 21
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 225_trix_hit_from-backleft_middle_stomach_new
+  Intervals:
+  - Start: 1
+    End: 2
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 8
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 270_trix_hit_middle_from-leftside_head_placeholder_new
+  Intervals:
+  - Start: 1
+    End: 9
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 19
+    End: 28
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 36
+    End: 42
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 8
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 270_trix_hit_middle_from-left-side_stomach_new
+  Intervals:
+  - Start: 1
+    End: 6
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 45_trix_stronghit_head_24FPS
+  Intervals:
+  - Start: 1
+    End: 9
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 23
+    End: 25
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 7
+    End: 16
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 315_trix_stronghit_frontleft_chest_24FPS
+  Intervals:
+  - Start: 1
+    End: 5
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 16
+    End: 26
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 7
+    End: 19
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 26
+    End: 31
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 315_hit_middle_from-frontright_stomach_new
+  Intervals:
+  - Start: 12
+    End: 13
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 5
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 23
+    End: 24
+    Func_self:
+      Fulcrums:
+      - RightFoot

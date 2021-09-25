@@ -1,0 +1,201 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6793183940023416367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6793183940023416365}
+  - component: {fileID: 6793183940023416364}
+  - component: {fileID: 6793183940023416362}
+  - component: {fileID: 6793183940023416363}
+  - component: {fileID: 6793183940023416360}
+  - component: {fileID: 6793183939511803832}
+  - component: {fileID: 1813776452}
+  - component: {fileID: 1753552881388537641}
+  m_Layer: 0
+  m_Name: AdditionalSystems
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6793183940023416365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6793183940023416367}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6793183940023416364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6793183940023416367}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f4e7ec56f4c3441b39fc0be849c63d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useAcceleration: 1
+  power: 1
+  target: {fileID: 0}
+--- !u!114 &6793183940023416362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6793183940023416367}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa91dc9141bf1524a8603f69e80b958a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeScale: 1
+--- !u!114 &6793183940023416363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6793183940023416367}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3dcc9e46e35f3b4ab2ad33db9afd69a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puppet: {fileID: 0}
+--- !u!114 &6793183940023416360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6793183940023416367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5076fe0bd442f34f9ed84961980c98e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puppetRoot: {fileID: 0}
+  character: {fileID: 0}
+  puppet: {fileID: 0}
+  levels:
+  - OpenSpace
+  - Sandbox2
+  - Demo
+  defaultLevel: Demo
+  layersToStandOn:
+    serializedVersion: 2
+    m_Bits: 513
+  levelDropdown: {fileID: 0}
+  LogTextUI: {fileID: 0}
+  ConstantLogTextUI: {fileID: 0}
+--- !u!114 &6793183939511803832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6793183940023416367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e270b832a65be75419fb2e88926a07a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Config: {fileID: 11400000, guid: 41c536e3a3d84004fbe29e3a6e831f09, type: 2}
+--- !u!114 &1813776452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6793183940023416367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1821985f4687247a873b807e83b762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puppetRoot: {fileID: 0}
+  puppet: {fileID: 0}
+  puppetAnimator: {fileID: 0}
+  ball: {fileID: 0}
+  characterController: {fileID: 0}
+  cameraController: {fileID: 0}
+  visTransform: {fileID: 0}
+  mainCamera: {fileID: 0}
+  fallingBehaviourControl: {fileID: 0}
+  characterPrefab: {fileID: 5293010409668718394, guid: b09264b6a434b0d4ea2d42bcf96a997b,
+    type: 3}
+  bulletPrefab: {fileID: 54000322043147374, guid: 9feaf241bc6436340b6423c8a498a6a2,
+    type: 3}
+  explosivePrefab: {fileID: 7383995626333354023, guid: 6cb44357e717cd54ea40ae13f4289033,
+    type: 3}
+  puppetDefailtAnimState: ded_idle
+  UseLocomotionAnimProp: UseLoco
+  ChangePoseTriggerAnimProp: SwitchPose
+  PoseNumberAnimProp: IdlePose
+  forceAnimProp: _Force
+  directionAnimProp: _Direction
+  yPosAnimProp: _yPos
+  startHitAnimProp: StartHit
+  layersToStandOn:
+    serializedVersion: 2
+    m_Bits: 513
+  bulletMassS: {fileID: 0}
+  bulletSpeedS: {fileID: 0}
+  bulletTypeD: {fileID: 0}
+  explosionDiameterS: {fileID: 0}
+  explosionSpeedS: {fileID: 0}
+  explosionForceS: {fileID: 0}
+  bulletDisappearToggle: {fileID: 0}
+  useLocomotionToggle: {fileID: 0}
+  followingCameraToggle: {fileID: 0}
+  ballToggle: {fileID: 0}
+  ballMassS: {fileID: 0}
+  ballDiameterS: {fileID: 0}
+  stateText: {fileID: 0}
+  bulletMassT: {fileID: 0}
+  bulletSpeedT: {fileID: 0}
+  explosionDiameterT: {fileID: 0}
+  explosionSpeedT: {fileID: 0}
+  explosionForceT: {fileID: 0}
+  ballMassT: {fileID: 0}
+  ballDiameterT: {fileID: 0}
+  forceI: {fileID: 0}
+  directionI: {fileID: 0}
+  yPosI: {fileID: 0}
+  bulletMass: 10
+  bulletSpeed: 10
+  bulletType: 0
+  explosionDiameter: 1
+  explosionSpeed: 10
+  explosionForce: 0
+  bulletDisappear: 1
+--- !u!114 &1753552881388537641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6793183940023416367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84432fb1242f16e4a8102bbe8e855533, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenshotDirectory: Screenshots
+  superSize: 16

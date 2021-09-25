@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ArmsMask
+  m_Mask: 00000000010000000100000000000000000000000100000001000000010000000100000000000000000000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: arm__prc_22_m_body
+    m_Weight: 1
+  - m_Path: arm__prc_22_m_tie
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 1
+  - m_Path: Armature/pelvis
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/chest_collider
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/neck
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/neck/head
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/neck/head/hair
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/chest_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/arm_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/arm_l/biceps_twist_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/arm_l/forearm_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/arm_l/forearm_l/forearm_twist_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/arm_l/forearm_l/hand_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/arm_l/forearm_l/hand_l/f_big1_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/arm_l/forearm_l/hand_l/f_big1_l/f_big2_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/arm_l/forearm_l/hand_l/f_big1_l/f_big2_l/f_big3_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/arm_l/forearm_l/hand_l/f_main1_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/arm_l/forearm_l/hand_l/f_main1_l/f_main2_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/arm_l/forearm_l/hand_l/f_main1_l/f_main2_l/f_main3_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/arm_l/forearm_l/hand_l/f_pointer1_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/arm_l/forearm_l/hand_l/f_pointer1_l/f_pointer2_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/arm_l/forearm_l/hand_l/f_pointer1_l/f_pointer2_l/f_pointer3_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/arm_l/forearm_l/hand_l/weapon_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_l/clavicle_l/scapular_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/chest_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/arm_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/arm_r/biceps_twist_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/arm_r/forearm_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/arm_r/forearm_r/forearm_twist_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/arm_r/forearm_r/hand_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/arm_r/forearm_r/hand_r/f_big1_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/arm_r/forearm_r/hand_r/f_big1_r/f_big2_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/arm_r/forearm_r/hand_r/f_big1_r/f_big2_r/f_big3_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/arm_r/forearm_r/hand_r/f_main1_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/arm_r/forearm_r/hand_r/f_main1_r/f_main2_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/arm_r/forearm_r/hand_r/f_main1_r/f_main2_r/f_main3_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/arm_r/forearm_r/hand_r/f_pointer1_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/arm_r/forearm_r/hand_r/f_pointer1_r/f_pointer2_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/arm_r/forearm_r/hand_r/f_pointer1_r/f_pointer2_r/f_pointer3_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/arm_r/forearm_r/hand_r/weapon_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/stomach/chest/zero_joint_hand_r/clavicle_r/scapular_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/zero_joint_pelvis_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/zero_joint_pelvis_l/back_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/zero_joint_pelvis_l/thigh_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/zero_joint_pelvis_l/thigh_l/calf_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/zero_joint_pelvis_l/thigh_l/calf_l/foot_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/zero_joint_pelvis_l/thigh_l/calf_l/foot_l/toe_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/zero_joint_pelvis_l/thigh_l/thigh_twist_l
+    m_Weight: 1
+  - m_Path: Armature/pelvis/zero_joint_pelvis_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/zero_joint_pelvis_r/back_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/zero_joint_pelvis_r/thigh_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/zero_joint_pelvis_r/thigh_r/calf_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/zero_joint_pelvis_r/thigh_r/calf_r/foot_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/zero_joint_pelvis_r/thigh_r/calf_r/foot_r/toe_r
+    m_Weight: 1
+  - m_Path: Armature/pelvis/zero_joint_pelvis_r/thigh_r/thigh_twist_r
+    m_Weight: 1
+  - m_Path: bdzin
+    m_Weight: 1
+  - m_Path: Geometry
+    m_Weight: 1
+  - m_Path: gun_r
+    m_Weight: 1
+  - m_Path: head_m
+    m_Weight: 1
+  - m_Path: katana_l
+    m_Weight: 1
+  - m_Path: Root
+    m_Weight: 1
+  - m_Path: spine
+    m_Weight: 1

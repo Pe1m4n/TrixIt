@@ -1,0 +1,27 @@
+Animations:
+- Animation: left_hit
+  Intervals:
+  - End: 6
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 12
+  - End: 21
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 29
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+      - RightFoot
+  #HitBoost & PM-boost:
+  - Start: 8
+  - End: 17
+    Func_coll:
+      physBoost: 4
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 100

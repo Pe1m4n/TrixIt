@@ -1,0 +1,320 @@
+Animations:
+- Animation: 0_trix_hit_forward_head_short
+  Intervals:
+  - Start: 1
+    End: 10
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 21
+    End: 27
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 4
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 11
+    End: 27
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 0_trix_hit_forward_chest_short
+  Intervals:
+  - Start: 1
+    End: 10
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 7
+    End: 8
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 14
+    End: 16
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 0_trix_hit_forward_stomach_short
+  Intervals:
+  - Start: 1
+    End: 10
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 5
+    End: 10
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 15
+    End: 16
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 45_trix_hit_forward_Diag_head_short
+  Intervals:
+  - Start: 1
+    End: 16
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 10
+    End: 18
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 45_trix_hit_forward_Diag_chest_short
+  Intervals:
+  - Start: 2
+    End: 13
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 8
+    End: 19
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 45_trix_hit_forward_Diag_stomach_short
+  Intervals:
+  - Start: 1
+    End: 15
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 8
+    End: 19
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 90_trix_hit_side_head_short
+  Intervals:
+  - Start: 1
+    End: 13
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 13
+    End: 21
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: Short_90_arm_trix_hit_side_arm_short
+  Intervals:
+  - Start: 1
+    End: 10
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 19
+    End: 24
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 7
+    End: 24
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 135_trix_hit_back_Diag_head_short
+  Intervals:
+  - Start: 1
+    End: 10
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 10
+    End: 16
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 135_trix_hit_back_Diag_chest_short_mirror
+  Intervals:
+  - Start: 5
+    End: 13
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 4
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 135_trix_hit_back_Diag_stomach_short
+  Intervals:
+  - Start: 1
+    End: 6
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 10
+    End: 11
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 4
+    End: 18
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 180_trix_hit_back_head_short
+  Intervals:
+  - Start: 1
+    End: 7
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 7
+    End: 17
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 180_trix_hit_back_chest_short
+  Intervals:
+  - Start: 1
+    End: 5
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 6
+    End: 13
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 180_trix_hit_back_stomach_short
+  Intervals:
+  - Start: 1
+    End: 7
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 18
+    End: 26
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 3
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 7
+    End: 26
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 225_trix_hit_back_Diag_head_short_mirror
+  Intervals:
+  - Start: 9
+    End: 16
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 10
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 225_trix_hit_back_Diag_chest_short
+  Intervals:
+  - Start: 1
+    End: 5
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 5
+    End: 13
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 225_trix_hit_back_Diag_stomach_short_mirror
+  Intervals:
+  - Start: 5
+    End: 18
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 5
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 10
+    End: 11
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 90_trix_hit_side_head_short
+  Intervals:
+  - Start: 1
+    End: 14
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 12
+    End: 21
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: Short_90_arm_trix_hit_side_arm_short
+  Intervals:
+  - Start: 1
+    End: 9
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 22
+    End: 24
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 7
+    End: 24
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 45_trix_hit_forward_Diag_head_short
+  Intervals:
+  - Start: 1
+    End: 16
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 2
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 10
+    End: 18
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 45_trix_hit_forward_Diag_chest_short
+  Intervals:
+  - Start: 2
+    End: 13
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 8
+    End: 19
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: 45_trix_hit_forward_Diag_stomach_short
+  Intervals:
+  - Start: 1
+    End: 14
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 7
+    End: 19
+    Func_self:
+      Fulcrums:
+      - RightFoot

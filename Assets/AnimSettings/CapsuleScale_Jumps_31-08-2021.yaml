@@ -1,0 +1,48 @@
+Animations:
+#- Animation: ded_run
+#  Intervals:
+#    - Func_self:
+#        CapsuleHeightScale: 1
+#- Animation: ded_run_circle_left
+#  Intervals:
+#    - Func_self:
+#        CapsuleHeightScale: 0.5
+#- Animation: ded_run_circle_right
+#  Intervals:
+#    - Func_self:
+#        CapsuleHeightScale: 2
+#Jumps:
+- Animation: jump_up_armatura
+  Intervals:
+    - Func_self:
+        CapsuleHeightScale: 0.8
+        CapsuleWidthScale: 1.0
+- Animation: jump_forward_run_armatura
+  Intervals:
+    - Func_self:
+        CapsuleHeightScale: 0.8
+        CapsuleWidthScale: 1.0
+- Animation: jump_forward_fastrun_armatura
+  Intervals:
+    - Func_self:
+        CapsuleHeightScale: 0.8
+        CapsuleWidthScale: 1.0
+#Flights:
+- Animation: gads_experiment_armatura_flight
+  Intervals:
+    - Func_self:
+        CapsuleHeightScale: 0.8
+        CapsuleWidthScale: 1.0
+#Landings:
+- Animation: crash_landing
+  Intervals:
+    - Func_self:
+        CapsuleHeightScale: 0.8
+        CapsuleWidthScale: 1.0
+#Descent:
+- Animation: descent_run_L_idle
+  Intervals:
+    - Func_self:
+        CapsuleHeightScale: 0.9
+        CapsuleWidthScale: 1.0
+        

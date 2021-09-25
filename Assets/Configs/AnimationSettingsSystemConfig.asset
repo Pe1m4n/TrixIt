@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a45fc30558a0ff94dac1bf892c0df7ae, type: 3}
+  m_Name: AnimationSettingsSystemConfig
+  m_EditorClassIdentifier: 
+  AllSettings:
+  - {fileID: 4900000, guid: 07778e4f7590abf449ef87fe1747d7cc, type: 3}
+  - {fileID: 4900000, guid: fabaf590bbfd17649a4accce1edc9de5, type: 3}
+  - {fileID: 4900000, guid: 6d1576829d9ccbc438b2d692141e8e27, type: 3}
+  - {fileID: 4900000, guid: c7ac33a9756bd85438596f05d418be90, type: 3}
+  - {fileID: 4900000, guid: 9fd95bc6ac13ccb49b6065c37da4cf57, type: 3}
+  - {fileID: 4900000, guid: 01177feede91e5040b34c5094610d889, type: 3}
+  - {fileID: 4900000, guid: 3ca3716e8ab38204fa8ebe8f006f4630, type: 3}
+  - {fileID: 4900000, guid: 0794274fd6184d6428ca434f50edac8b, type: 3}
+  - {fileID: 4900000, guid: c024225097060fb45bfc27c8b7490367, type: 3}
+  - {fileID: 4900000, guid: 53f3863ee40e65e4db4b46e2e5e08087, type: 3}
+  - {fileID: 4900000, guid: 3434c5c49181f1c4da67229a2e5fe637, type: 3}
+  - {fileID: 4900000, guid: 2dbace7991f705844b5098c5c3565aa8, type: 3}
+  - {fileID: 4900000, guid: 96944bd9d5e173744841d1dbb5b0b549, type: 3}
+  - {fileID: 4900000, guid: 48ced7ac58df93046996ae3bffeff783, type: 3}
+  fulcrumWeightNeeded: 1
+  pmBoosterWeightNeeded: 0
+  physBoostWeightNeeded: 0

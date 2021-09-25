@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 4809f6afd7c3c5a44982dac78ee7d0c1
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Ubuntu
+  fontNames:
+  - Avenir Next Cyr
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 372a6eb48f73f2545808739f6524711f, type: 3}
+  - {fileID: 12800000, guid: 04895c1feca13f9428b904fc7e7241af, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: font_bundle
+  assetBundleVariant: 

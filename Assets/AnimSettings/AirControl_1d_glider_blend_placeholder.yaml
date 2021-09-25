@@ -1,0 +1,57 @@
+Animations:
+- Animation: glider_normal_placeholder
+  Intervals:
+  - Func_air:
+      #horizontal flight control
+      ControlForceEnabled: true
+      #FlightForwardControlForce: 5000
+      #FlightBackControlForce: 5000
+      #FlightSideControlForce: 5000
+      #ForwardControlForceSpeedLimit: 5
+      #BackControlForceSpeedLimit: 0
+      #SideControlForceSpeedLimit: 5
+      #vertical flight control
+      VerticalControlForceEnabled: true
+      UpControlForce: 2000
+      UpControlForceSpeedLimit: 10
+      #FlightDownControlForce: 10000
+      #DownControlForceSpeedLimit: 5
+      #passive levitation forces
+      PassiveUpForce: 2000
+      PassiveUpForceSpeedLimit: 0
+      PassiveForwardForce: 100
+      PassiveForwardForceSpeedLimit: 20
+      #FlightBackForce: 500 //not implemented yet! (08.09.2021)
+      #PassiveBackForceSpeedLimit: 0
+      PassiveLeftForce: 1000 
+      PassiveLeftForceSpeedLimit: 0 
+      PassiveRightForce: 1000 
+      PassiveRightForceSpeedLimit: 0
+- Animation: glider_dive_placeholder
+  Intervals:
+  - Func_air:
+      #horizontal flight control
+      #FlightControlForceEnabled: true
+      #FlightForwardControlForce: 5000
+      #FlightBackControlForce: 5000
+      #FlightSideControlForce: 5000
+      #ForwardControlForceSpeedLimit: 5
+      #BackControlForceSpeedLimit: 0
+      #SideControlForceSpeedLimit: 5
+      #vertical flight control
+      #FlightVerticalControlForceEnabled: true
+      #FlightUpControlForce: 20000
+      #FlightDownControlForce: 10000
+      #UpControlForceSpeedLimit: 5
+      #DownControlForceSpeedLimit: 5
+      #passive levitation forces
+      PassiveUpForce: 1000
+      PassiveUpForceSpeedLimit: 0
+      PassiveForwardForce: 1000
+      PassiveForwardForceSpeedLimit: 30
+      #FlightBackForce: 500 //not implemented yet! (08.09.2021)
+      #PassiveBackForceSpeedLimit: 0
+      PassiveLeftForce: 1000 
+      PassiveLeftForceSpeedLimit: 0 
+      PassiveRightForce: 1000 
+      PassiveRightForceSpeedLimit: 0

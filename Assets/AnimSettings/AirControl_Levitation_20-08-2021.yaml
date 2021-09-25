@@ -1,0 +1,30 @@
+Animations:
+- Animation: LevitationTest
+  Intervals:
+  - Func_air:
+      #horizontal flight control
+      ControlForceEnabled: true
+      ForwardControlForce: 5000
+      BackControlForce: 5000
+      #FlightSideControlForce: 5000
+      ForwardControlForceSpeedLimit: 10
+      BackControlForceSpeedLimit: 0
+      #SideControlForceSpeedLimit: 5
+      #vertical flight control
+      VerticalControlForceEnabled: true
+      UpControlForce: 20000
+      DownControlForce: 10000
+      UpControlForceSpeedLimit: 5
+      DownControlForceSpeedLimit: 5
+      #passive levitation forces
+      PassiveUpForce: 3000
+      PassiveUpForceSpeedLimit: 0
+      #passive levitation brakes
+      PassiveForwardForce: 500
+      PassiveBackForce: 500
+      PassiveLeftForce: 500
+      PassiveRightForce: 500
+      PassiveForwardForceSpeedLimit: 0
+      PassiveBackForceSpeedLimit: 0
+      PassiveLeftForceSpeedLimit: 0
+      PassiveRightForceSpeedLimit: 0

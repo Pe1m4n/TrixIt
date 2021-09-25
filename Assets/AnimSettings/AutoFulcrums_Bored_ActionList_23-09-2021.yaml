@@ -1,0 +1,602 @@
+Animations:
+- Animation: Shoulder Rubbing
+  Intervals:
+  - Start: 1
+    End: 174
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 174
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: sit_common_idle
+  Intervals:
+  - Start: 1
+    End: 59
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 59
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: battle_idle_01
+  Intervals:
+  - Start: 1
+    End: 58
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 58
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: sit_common_idle
+  Intervals:
+  - Start: 1
+    End: 59
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 59
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: leg_back_TEST
+  Intervals:
+  - Start: 2
+    End: 11
+    Func_self:
+      Fulcrums:
+      - Hips
+  - Start: 37
+    End: 42
+    Func_self:
+      Fulcrums:
+      - Hips
+  - Start: 48
+    End: 59
+    Func_self:
+      Fulcrums:
+      - Hips
+  - Start: 2
+    End: 59
+    Func_self:
+      Fulcrums:
+      - LeftUpLeg
+  - Start: 2
+    End: 59
+    Func_self:
+      Fulcrums:
+      - LeftLeg
+  - Start: 1
+    End: 59
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 2
+    End: 59
+    Func_self:
+      Fulcrums:
+      - RightUpLeg
+  - Start: 1
+    End: 3
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: twine_idle
+  Intervals:
+  - Start: 1
+    End: 59
+    Func_self:
+      Fulcrums:
+      - Hips
+  - Start: 5
+    End: 59
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 59
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 2
+    End: 59
+    Func_self:
+      Fulcrums:
+      - LeftHand
+  - Start: 2
+    End: 59
+    Func_self:
+      Fulcrums:
+      - RightHand
+- Animation: hands_high_idle
+  Intervals:
+  - Start: 1
+    End: 59
+    Func_self:
+      Fulcrums:
+      - LeftHand
+  - Start: 1
+    End: 59
+    Func_self:
+      Fulcrums:
+      - RightHand
+- Animation: hands_and_head_idle
+  Intervals:
+  - Start: 2
+    End: 59
+    Func_self:
+      Fulcrums:
+      - Head
+  - Start: 2
+    End: 59
+    Func_self:
+      Fulcrums:
+      - LeftForeArm
+  - Start: 1
+    End: 59
+    Func_self:
+      Fulcrums:
+      - LeftHand
+  - Start: 1
+    End: 59
+    Func_self:
+      Fulcrums:
+      - RightHand
+- Animation: hands_idle
+  Intervals:
+  - Start: 1
+    End: 59
+    Func_self:
+      Fulcrums:
+      - LeftHand
+  - Start: 1
+    End: 59
+    Func_self:
+      Fulcrums:
+      - RightHand
+- Animation: one_hand_idle
+  Intervals:
+  - Start: 1
+    End: 59
+    Func_self:
+      Fulcrums:
+      - RightHand
+- Animation: yoga_01
+  Intervals:
+  - Start: 2
+    End: 59
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+- Animation: yoga_v2
+  Intervals:
+  - Start: 1
+    End: 59
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+- Animation: yoga_v3
+  Intervals:
+  - Start: 2
+    End: 59
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: jump_forward_2
+  Intervals:
+  - Start: 2
+    End: 11
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 45
+    End: 50
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 61
+    End: 63
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 9
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 44
+    End: 46
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 61
+    End: 63
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: punch_1
+  Intervals:
+  - Start: 3
+    End: 7
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 15
+    End: 19
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+- Animation: punch_2
+  Intervals:
+  - Start: 4
+    End: 7
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 15
+    End: 31
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 23
+    End: 25
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: punch_heavy
+  Intervals:
+  - Start: 4
+    End: 7
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 26
+    End: 31
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+- Animation: uppercut
+  Intervals:
+  - Start: 4
+    End: 8
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 18
+    End: 27
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+- Animation: sweep
+  Intervals:
+  - Start: 6
+    End: 36
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 11
+    End: 13
+    Func_self:
+      Fulcrums:
+      - LeftHand
+- Animation: kick_spinning
+  Intervals:
+  - Start: 6
+    End: 7
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 13
+    End: 22
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+- Animation: kick_forward_2
+  Intervals:
+  - Start: 27
+    End: 32
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 51
+    End: 53
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 11
+    End: 12
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 39
+    End: 44
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: battle_idle_mocap
+  Intervals:
+  - Start: 2
+    End: 48
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 2
+    End: 48
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: left_hit
+  Intervals:
+  - Start: 1
+    End: 5
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 12
+    End: 51
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 10
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 20
+    End: 51
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: left_punch
+  Intervals:
+  - Start: 1
+    End: 7
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 25
+    End: 30
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 30
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: agl_high_kick
+  Intervals:
+  - Start: 1
+    End: 29
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 8
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 23
+    End: 29
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: agl_jump_kick
+  Intervals:
+  - Start: 21
+    End: 25
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 40
+    End: 41
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 3
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 24
+    End: 25
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 40
+    End: 41
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: agl_spinning_kick
+  Intervals:
+  - Start: 1
+    End: 3
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 13
+    End: 43
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 4
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 23
+    End: 43
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 13
+    End: 14
+    Func_self:
+      Fulcrums:
+      - LeftHand
+- Animation: str_spinning_punch
+  Intervals:
+  - Start: 1
+    End: 16
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 38
+    End: 42
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 13
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 35
+    End: 42
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: str_super_kick
+  Intervals:
+  - Start: 1
+    End: 45
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 7
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 21
+    End: 45
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: giant_sword_slash
+  Intervals:
+  - Start: 1
+    End: 5
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 21
+    End: 69
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 5
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 30
+    End: 69
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: giant_sword_slash_2
+  Intervals:
+  - Start: 1
+    End: 5
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 21
+    End: 59
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 86
+    End: 110
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 5
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 30
+    End: 51
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 56
+    End: 59
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 87
+    End: 110
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: helga_slash_1
+  Intervals:
+  - Start: 1
+    End: 31
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 38
+    End: 47
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 6
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 12
+    End: 13
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 28
+    End: 47
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: helga_slash_2
+  Intervals:
+  - Start: 1
+    End: 27
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 50
+    End: 59
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 6
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 13
+    End: 14
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 23
+    End: 29
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 48
+    End: 59
+    Func_self:
+      Fulcrums:
+      - RightFoot

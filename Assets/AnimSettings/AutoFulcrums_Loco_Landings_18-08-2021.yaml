@@ -1,0 +1,54 @@
+Animations:
+- Animation: landing_hard
+  Intervals:
+  - Start: 33
+    End: 35
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 10
+    End: 12
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 32
+    End: 35
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: descent_run_L_landing
+  Intervals:
+  - Start: 10
+    End: 13
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 10
+    End: 17
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: landing
+  Intervals:
+  - Start: 16
+    End: 30
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 10
+    End: 30
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: landing_standart
+  Intervals:
+  - Start: 16
+    End: 20
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 14
+    End: 20
+    Func_self:
+      Fulcrums:
+      - RightFoot

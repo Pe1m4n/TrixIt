@@ -1,0 +1,213 @@
+Animations:
+- Animation: Block_50fps
+  Intervals:
+  - Start: 0
+    Func_coll:
+    #  physBoost: 1
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: punch_1
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: punch_2
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: punch_heavy
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: uppercut
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: sweep
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: kick_spinning
+  Intervals:
+  - Start: 10
+  - End: 15
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 100
+- Animation: kick_forward_2
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: left_punch
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: Roudhouse_kick_50fps
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: Spinkick_50fps
+  Intervals:
+  - Start: 8
+  - End: 18
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 100
+- Animation: Jab_50fps
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: agl_high_kick
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: agl_jump_kick
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: agl_spinning_kick
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: str_spinning_punch
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: str_super_kick
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: giant_sword_slash
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: giant_sword_slash_2
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: helga_slash_1
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000
+- Animation: helga_slash_2
+  Intervals:
+  - Start: 0
+    Func_coll:
+      physBoost: 5
+    Func_self:
+      pmBooster:
+        fullBody: true
+        immunity: 1
+        impulseMlp: 9000

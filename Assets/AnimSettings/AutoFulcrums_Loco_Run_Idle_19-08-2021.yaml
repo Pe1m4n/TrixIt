@@ -1,0 +1,234 @@
+Animations:
+- Animation: ded_start_run_back
+  Intervals:
+  - End: 14
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - End: 8
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 12
+    End: 14
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: ded_start_run_back_135
+  Intervals:
+  - End: 16
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 17
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: ded_start_run_right
+  Intervals:
+  - End: 14
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 15
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: ded_start_run_left
+  Intervals:
+  - Start: 1
+  - End: 17
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 22
+    End: 26
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 12
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 14
+    End: 17
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 19
+    End: 27
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: ded_start_run_back_225
+  Intervals:
+  - End: 14
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 8
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 10
+    End: 13
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: ded_start_run_back_179
+  Intervals:
+  - End: 16
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 18
+    End: 20
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 17
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: ded_start_run
+  Intervals:
+  - End: 9
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 14
+    End: 18
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 18
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: ded_start_run_stop
+  Intervals:
+  - End: 13
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 13
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: ded_run_circle_left
+  Intervals:
+  - End: 12
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 16
+    End: 20
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - End: 2
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 4
+    End: 8
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 11
+    End: 23
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: ded_run
+  Intervals:
+  - End: 9
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 14
+    End: 18
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 3
+    End: 8
+    Func_self:
+      Fulcrums:
+      - RightFoot
+  - Start: 10
+    End: 19
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: ded_run_circle_right
+  Intervals:
+  - Start: 2
+    End: 8
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 16
+    End: 18
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 20
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: ded_run_fast
+  Intervals:
+  - Start: 1
+  - End: 2
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 5
+    End: 8
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: ded_run_fast_left
+  Intervals:
+  #- Start: 1
+  #- End: 2
+  #  Func_self:
+  #    Fulcrums:
+  #    - LeftFoot
+  - Start: 10
+    End: 12
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 6
+    End: 9
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: ded_run_fast_right
+  Intervals:
+  - Start: 2
+    End: 8
+    Func_self:
+      Fulcrums:
+      - RightFoot
+- Animation: ded_idle
+  Intervals:
+  - End: 74
+    Func_self:
+      Fulcrums:
+      - LeftFoot
+  - Start: 1
+    End: 74
+    Func_self:
+      Fulcrums:
+      - RightFoot
