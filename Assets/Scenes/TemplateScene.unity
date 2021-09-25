@@ -1933,6 +1933,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5293010410980575501, guid: b09264b6a434b0d4ea2d42bcf96a997b, type: 3}
+      propertyPath: doVisualize
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5293010410980575502, guid: b09264b6a434b0d4ea2d42bcf96a997b, type: 3}
       propertyPath: kinematicKnockoutDistance
       value: 0.5
@@ -2298,6 +2302,7 @@ GameObject:
   - component: {fileID: 824192733}
   - component: {fileID: 824192732}
   - component: {fileID: 824192735}
+  - component: {fileID: 824192736}
   m_Layer: 0
   m_Name: SimpleCube 2 (5)
   m_TagString: Untagged
@@ -2326,7 +2331,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824192730}
-  m_Material: {fileID: 13400000, guid: 2c076ff44da419847a1ca19c1c13ab77, type: 2}
+  m_Material: {fileID: 13400000, guid: df70049e69f6bdd4bb6ccd6db663a567, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2397,6 +2402,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &824192736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824192730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b349ddd4aa6f4ae6b88cf8ca4b4d8179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoxType: 1
 --- !u!1 &889181630
 GameObject:
   m_ObjectHideFlags: 0
