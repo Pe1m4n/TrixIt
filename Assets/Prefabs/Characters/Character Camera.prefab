@@ -116,7 +116,7 @@ MonoBehaviour:
   rotationSensitivity: 3.5
   yMinLimit: -10
   yMaxLimit: 80
-  rotateAlways: 0
+  rotateAlways: 1
   rotateOnLeftButton: 0
   rotateOnRightButton: 1
   rotateOnMiddleButton: 0
