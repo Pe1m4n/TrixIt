@@ -40,6 +40,7 @@ namespace Trixit
                 var dir =Vector3.Lerp(other.collider.transform.forward.normalized, other.collider.transform.up.normalized, AnglesFromForward).normalized;
                 var rb = other.collider.gameObject.GetComponent<Rigidbody>();
                 rb.AddForce(dir * JumpForce, ForceMode);
+                TryScheduleDestroy();
             }
         }
 
