@@ -24,13 +24,13 @@ namespace Trixit
         {
             if (!other.gameObject.TryGetComponent<FloorBox>(out var box) || box.BoxType == _turnInto || box.Immutable)
             {
-                Destroy(this);
+                Destroy(gameObject);
                 return;
             }
 
             //_playerState.Ammo[_turnInto]--;
             box.SetType(_turnInto);
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 }
