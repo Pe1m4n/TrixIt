@@ -8,6 +8,7 @@ namespace Trixit
     {
         public BoxType BoxType;
         public float JumpForce = 300f;
+        public ForceMode ForceMode;
         
         public void SetType(BoxType boxType)
         {
@@ -36,7 +37,7 @@ namespace Trixit
 
             var dir = (other.transform.up.normalized + other.transform.forward.normalized).normalized;
             var rb = other.collider.gameObject.GetComponent<Rigidbody>();
-            rb.AddForce(dir * JumpForce, ForceMode.Impulse);
+            rb.AddForce(dir * JumpForce, ForceMode);
         }
     }
 
