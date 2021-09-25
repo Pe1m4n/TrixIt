@@ -253,6 +253,7 @@ MonoBehaviour:
   AnglesFromForward: 30
   JumpForce: 11
   ForceMode: 5
+  DestroyTime: 2
 --- !u!1 &148983911
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,6 +726,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PinkLight
       objectReference: {fileID: 0}
+    - target: {fileID: 6744231358800387283, guid: ceaca8ebf61e1d84a9047c93f2052ec9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 6744231358800387283, guid: ceaca8ebf61e1d84a9047c93f2052ec9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.40979615
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ceaca8ebf61e1d84a9047c93f2052ec9, type: 3}
 --- !u!4 &399221720 stripped
@@ -1165,6 +1174,7 @@ MonoBehaviour:
   AnglesFromForward: 30
   JumpForce: 11
   ForceMode: 5
+  DestroyTime: 2
 --- !u!4 &781412825 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7799870402261247141, guid: 5a9be53ae41707b4790838f33036a7e5, type: 3}
@@ -1300,6 +1310,7 @@ MonoBehaviour:
   AnglesFromForward: 30
   JumpForce: 11
   ForceMode: 5
+  DestroyTime: 2
 --- !u!4 &819953165 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5293010409815234131, guid: b09264b6a434b0d4ea2d42bcf96a997b, type: 3}
@@ -1435,6 +1446,7 @@ MonoBehaviour:
   AnglesFromForward: 30
   JumpForce: 11
   ForceMode: 5
+  DestroyTime: 2
 --- !u!1 &898105916
 GameObject:
   m_ObjectHideFlags: 0
@@ -8389,6 +8401,7 @@ MonoBehaviour:
   AnglesFromForward: 30
   JumpForce: 11
   ForceMode: 5
+  DestroyTime: 2
 --- !u!1001 &1468108182
 PrefabInstance:
   m_ObjectHideFlags: 0

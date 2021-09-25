@@ -1035,6 +1035,7 @@ MonoBehaviour:
   AnglesFromForward: 30
   JumpForce: 11
   ForceMode: 5
+  DestroyTime: 2
 --- !u!4 &781412825 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7799870402261247141, guid: 5a9be53ae41707b4790838f33036a7e5, type: 3}
@@ -1170,6 +1171,7 @@ MonoBehaviour:
   AnglesFromForward: 30
   JumpForce: 11
   ForceMode: 5
+  DestroyTime: 2
 --- !u!4 &819953165 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5293010409815234131, guid: b09264b6a434b0d4ea2d42bcf96a997b, type: 3}
@@ -1300,11 +1302,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b349ddd4aa6f4ae6b88cf8ca4b4d8179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoxType: 0
+  BoxType: 2
   Immutable: 0
   AnglesFromForward: 0.5
   JumpForce: 11
   ForceMode: 2
+  DestroyTime: 2
 --- !u!1 &898105916
 GameObject:
   m_ObjectHideFlags: 0
@@ -8259,6 +8262,7 @@ MonoBehaviour:
   AnglesFromForward: 30
   JumpForce: 11
   ForceMode: 5
+  DestroyTime: 2
 --- !u!1001 &1468108182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8409,11 +8413,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b349ddd4aa6f4ae6b88cf8ca4b4d8179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoxType: 0
+  BoxType: 2
   Immutable: 0
   AnglesFromForward: 0.5
   JumpForce: 11
   ForceMode: 2
+  DestroyTime: 2
 --- !u!54 &1608897431
 Rigidbody:
   m_ObjectHideFlags: 0
