@@ -11200,7 +11200,7 @@ GameObject:
   - component: {fileID: 1453663313}
   - component: {fileID: 1453663317}
   m_Layer: 0
-  m_Name: SimpleCube (9)
+  m_Name: FinishCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11216,7 +11216,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.646726, y: 33.924072, z: -41.175056}
   m_LocalScale: {x: 4.5, y: 4.5, z: 4.5}
-  m_Children: []
+  m_Children:
+  - {fileID: 2138784492}
   m_Father: {fileID: 959271933}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17887,13 +17888,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138784491}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.15, y: 4.05, z: 20.152}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0511108, y: 0.8999999, z: -0.07733324}
+  m_LocalScale: {x: 0.22222224, y: 0.22222224, z: 0.22222224}
   m_Children:
   - {fileID: 1830820709}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1453663312}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3757076345408964236
 PrefabInstance:
