@@ -2284,6 +2284,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 226a588f6b6349419d3703c9d755f47c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _jumpAmmo: 5
+  _hardAmmo: 5
 --- !u!114 &657281112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2298,7 +2300,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shootingPivot: {fileID: 323859345}
   _camera: {fileID: 562369358}
-  _projectilePrefab: {fileID: 3069575131772142113, guid: 5c45eb17c33e40248b12a12e5a231d87, type: 3}
+  _jumpProjectile: {fileID: -8505253254985282089, guid: 2ddf0a96cf7eb154abbd7f3162f016e9, type: 3}
+  _concreteProjectile: {fileID: 4485384047788874109, guid: 1a4c0c4ec86189941ad22ec812cc8a4c, type: 3}
 --- !u!4 &657281113 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5293010409668718395, guid: b09264b6a434b0d4ea2d42bcf96a997b, type: 3}
@@ -2751,6 +2754,7 @@ MonoBehaviour:
   AnglesFromForward: 0.5
   JumpForce: 11
   ForceMode: 2
+  DestroyTime: 2
 --- !u!1 &889181630
 GameObject:
   m_ObjectHideFlags: 0
