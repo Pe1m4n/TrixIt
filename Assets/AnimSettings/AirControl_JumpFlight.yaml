@@ -5,9 +5,9 @@ Animations:
       #horizontal flight control
       ControlForceEnabled: true
       ForwardControlForce: 20000
-      ForwardControlForceSpeedLimit: 4
+      # ForwardControlForceSpeedLimit: 4
       BackControlForce: -20000
-      BackControlForceSpeedLimit: 4    
+      # BackControlForceSpeedLimit: 4    
       #FlightSideControlForce: 1000
       #SideControlForceSpeedLimit: 2
       #passive side stabilization forces:
@@ -25,9 +25,9 @@ Animations:
       #horizontal flight control
       ControlForceEnabled: true
       ForwardControlForce: 20000
-      ForwardControlForceSpeedLimit: 4
+      # ForwardControlForceSpeedLimit: 4
       BackControlForce: -20000
-      BackControlForceSpeedLimit: 4      
+      # BackControlForceSpeedLimit: 4      
       #FlightSideControlForce: 1000
       #SideControlForceSpeedLimit: 2
       #passive side stabilization forces:
@@ -44,10 +44,10 @@ Animations:
   - Func_air:
       #horizontal flight control
       ControlForceEnabled: true
-      ForwardControlForce: 0
-      ForwardControlForceSpeedLimit: 0
-      BackControlForce: 0
-      BackControlForceSpeedLimit: 0
+      ForwardControlForce: 5000
+      ForwardControlForceSpeedLimit: 4
+      BackControlForce: -5000
+      BackControlForceSpeedLimit: 4
       #FlightSideControlForce: 1000
       #SideControlForceSpeedLimit: 2
       #passive side stabilization forces:
@@ -55,10 +55,10 @@ Animations:
       PassiveRightForce: 1000 
       PassiveLeftForceSpeedLimit: 0 
       PassiveRightForceSpeedLimit: 0
-      PassiveForwardForce: 0
-      PassiveBackForce: 1000 
-      PassiveForwardForceSpeedLimit: 0 
-      PassiveBackForceSpeedLimit: 0
+      # PassiveForwardForce: 0
+      # PassiveBackForce: 1000 
+      # PassiveForwardForceSpeedLimit: 0 
+      # PassiveBackForceSpeedLimit: 0
       # VerticalControlForceEnabled: true 
       # UpControlForce: 1000
       # UpControlForceSpeedLimit: 4       
@@ -69,9 +69,9 @@ Animations:
       #horizontal flight control
       ControlForceEnabled: true
       ForwardControlForce: 20000
-      ForwardControlForceSpeedLimit: 4
+      # ForwardControlForceSpeedLimit: 4
       BackControlForce: -20000
-      BackControlForceSpeedLimit: 4
+      # BackControlForceSpeedLimit: 4
       #FlightSideControlForce: 1000
       #SideControlForceSpeedLimit: 2
       #passive side stabilization forces:
