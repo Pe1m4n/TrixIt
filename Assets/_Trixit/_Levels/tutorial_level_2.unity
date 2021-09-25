@@ -1332,6 +1332,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 226a588f6b6349419d3703c9d755f47c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _jumpAmmo: 0
+  _hardAmmo: 0
 --- !u!1 &468030448
 GameObject:
   m_ObjectHideFlags: 0
@@ -2589,9 +2591,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b349ddd4aa6f4ae6b88cf8ca4b4d8179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoxType: 1
+  BoxType: 0
   Immutable: 0
-  AnglesFromForward: 30
+  AnglesFromForward: 0.5
   JumpForce: 11
   ForceMode: 2
 --- !u!1 &889181630
