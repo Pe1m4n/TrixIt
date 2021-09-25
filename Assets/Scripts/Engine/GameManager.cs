@@ -18,18 +18,18 @@ public class GameManager : MonoBehaviour
 
 	public static void Log(string log)
 	{
-		Debug.Log(log);
-		{
-			if (GM.LogTextUI != null)
-			{
-				GM.LogTextUI.text += "\n" + log;
-				var s = GM.LogTextUI.text.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
-				if (s.Length > 250)
-				{
-					GM.LogTextUI.text = string.Concat(s.Skip(s.Length - 250).Select(x => "\n" + x));
-				}
-			}
-		}
+		// Debug.Log(log);
+		// {
+		// 	if (GM.LogTextUI != null)
+		// 	{
+		// 		GM.LogTextUI.text += "\n" + log;
+		// 		var s = GM.LogTextUI.text.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
+		// 		if (s.Length > 250)
+		// 		{
+		// 			GM.LogTextUI.text = string.Concat(s.Skip(s.Length - 250).Select(x => "\n" + x));
+		// 		}
+		// 	}
+		// }
 	}
 
 	public static void FixUpdLog(string log)
@@ -70,43 +70,43 @@ public class GameManager : MonoBehaviour
 	#region unity
 	private void Awake()
 	{
-		if (gm != null)
-		{
-			enabled = false;
-			throw new Exception("GameManager: Уже существует один GameManager!");
-		}
-		gm = this;
-
-		if (!levels.Any(l => l == defaultLevel))
-		{
-			Debug.LogError("Game Manager: Дефолтный левел отсутствует, вместо него будет использован первый уровень");
-			defaultLevel = levels[0];
-		}
+		// if (gm != null)
+		// {
+		// 	enabled = false;
+		// 	throw new Exception("GameManager: Уже существует один GameManager!");
+		// }
+		// gm = this;
+		//
+		// if (!levels.Any(l => l == defaultLevel))
+		// {
+		// 	Debug.LogError("Game Manager: Дефолтный левел отсутствует, вместо него будет использован первый уровень");
+		// 	defaultLevel = levels[0];
+		// }
 	}
 
 	private void Start()
 	{
-		var sls = (SceneLoader[])FindObjectsOfType(typeof(SceneLoader));
-		if (sls.Length > 1) Debug.LogError("Game Manger: необходимо загрузить сразу несколько сцен - будет загружена только одна");
-		if (sls.Length > 0) defaultLevel = sls[0].LoadMe;
-
-		var levelOptions = new List<Dropdown.OptionData>();
-		foreach (var l in levels)
-		{
-			levelOptions.Add(new Dropdown.OptionData(l));
-		}
-		if (levelDropdown != null)
-		{
-			levelDropdown.AddOptions(levelOptions);
-			levelDropdown.value = levels.FindIndex(l => l == defaultLevel);
-			levelDropdown.onValueChanged.AddListener(OnUIChangeLevel);
-		}
-		SetLevel(defaultLevel);
-
-		foreach (var bp in puppetRoot.gameObject.GetComponentsInChildren<Collider>())
-		{
-			correspondingBWs[bp.gameObject] = puppetRoot.gameObject.GetComponentInChildren<BalanceWatcher>();
-		}
+		// var sls = (SceneLoader[])FindObjectsOfType(typeof(SceneLoader));
+		// if (sls.Length > 1) Debug.LogError("Game Manger: необходимо загрузить сразу несколько сцен - будет загружена только одна");
+		// if (sls.Length > 0) defaultLevel = sls[0].LoadMe;
+		//
+		// var levelOptions = new List<Dropdown.OptionData>();
+		// foreach (var l in levels)
+		// {
+		// 	levelOptions.Add(new Dropdown.OptionData(l));
+		// }
+		// if (levelDropdown != null)
+		// {
+		// 	levelDropdown.AddOptions(levelOptions);
+		// 	levelDropdown.value = levels.FindIndex(l => l == defaultLevel);
+		// 	levelDropdown.onValueChanged.AddListener(OnUIChangeLevel);
+		// }
+		// SetLevel(defaultLevel);
+		//
+		// foreach (var bp in puppetRoot.gameObject.GetComponentsInChildren<Collider>())
+		// {
+		// 	correspondingBWs[bp.gameObject] = puppetRoot.gameObject.GetComponentInChildren<BalanceWatcher>();
+		// }
 	}
 
 	private void FixedUpdate()
