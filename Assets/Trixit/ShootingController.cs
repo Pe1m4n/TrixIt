@@ -11,6 +11,12 @@ namespace Trixit
         
         private void Update()
         {
+            if (_shootingPivot.transform.position.y < -20f)
+            {
+                GlobalController.Restart();
+                return;
+            }
+            
             if (!Input.GetKeyDown(KeyCode.Mouse0) && !Input.GetKeyDown(KeyCode.Mouse1))
             {
                 return;
