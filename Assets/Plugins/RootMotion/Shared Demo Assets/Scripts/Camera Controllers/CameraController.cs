@@ -172,7 +172,7 @@ namespace RootMotion {
 			if (!cam.enabled) return;
 
 			// In case of pause or slow-mo
-			if (deltaTime < 0.02f) deltaTime = 0.02f; // TODO: åñòü íåçàâèñèìîå îò òèêðåéòà äåëüòà
+			if (deltaTime < 0.02f) deltaTime = 0.02f; // TODO: ÐµÑÑ‚ÑŒ Ð½ÐµÐ·Ð°Ð²Ð¸ÑÐ¸Ð¼Ð¾Ðµ Ð¾Ñ‚ Ñ‚Ð¸ÐºÑ€ÐµÐ¹Ñ‚Ð° Ð´ÐµÐ»ÑŒÑ‚Ð°
 			
 			// Following
 			if (follow && secondaryFollow && Time.time - lastInputTime > timeBeforeFollow)
@@ -244,6 +244,10 @@ namespace RootMotion {
 
 				// Translating the camera
 				transform.position = position;
+
+				var pos = transform.position;
+				pos += transform.right * 0.5f;
+				transform.position = pos;
 			}
 
 			transform.rotation = rotation;
