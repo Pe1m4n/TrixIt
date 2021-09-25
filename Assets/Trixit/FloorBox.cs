@@ -7,6 +7,7 @@ namespace Trixit
     public class FloorBox : MonoBehaviour
     {
         public BoxType BoxType;
+        public float JumpForce = 300f;
         
         public void SetType(BoxType boxType)
         {
@@ -32,9 +33,9 @@ namespace Trixit
             {
                 return;
             }
-            
-            var animator = other.collider.gameObject.GetComponent<Animator>();
-            animator.SetTrigger("JumpBox");
+
+            var rb = other.collider.gameObject.GetComponent<Rigidbody>();
+            rb.AddForce(other.collider.transform.up * JumpForce, ForceMode.Impulse);
         }
     }
 
