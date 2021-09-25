@@ -44,6 +44,7 @@ namespace Trixit
 
     public enum BoxType
     {
+        Concrete,
         Simple,
         Jumpy
     }

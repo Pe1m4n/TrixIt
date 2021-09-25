@@ -2746,7 +2746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b349ddd4aa6f4ae6b88cf8ca4b4d8179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoxType: 1
+  BoxType: 0
   Immutable: 0
   AnglesFromForward: 0.5
   JumpForce: 11

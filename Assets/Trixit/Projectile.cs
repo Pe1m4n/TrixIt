@@ -28,7 +28,7 @@ namespace Trixit
                 return;
             }
 
-            //_playerState.Ammo[_turnInto]--;
+            _playerState.Ammo[_turnInto]--;
             box.SetType(_turnInto);
             Destroy(gameObject);
         }
