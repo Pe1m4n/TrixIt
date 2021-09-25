@@ -6,6 +6,7 @@ namespace Trixit
     public class FloorBox : MonoBehaviour
     {
         public BoxType BoxType;
+        public bool Immutable;
         public float AnglesFromForward = 30f;
         public float JumpForce = 11f;
         public ForceMode ForceMode = ForceMode.Acceleration;
