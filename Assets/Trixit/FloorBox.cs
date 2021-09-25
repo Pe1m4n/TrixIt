@@ -10,6 +10,10 @@ namespace Trixit
         public float AnglesFromForward = 30f;
         public float JumpForce = 11f;
         public ForceMode ForceMode = ForceMode.Acceleration;
+        public float DestroyTime = 2f;
+
+        private bool _scheduledDestroy;
+        private float _timeUntilDestroy;
         
         public void SetType(BoxType boxType)
         {
@@ -31,14 +35,32 @@ namespace Trixit
                 return;
             }
 
-            if (BoxType == BoxType.Simple)
+            if (BoxType == BoxType.Jumpy)
             {
-                return;
+                var dir =Vector3.Lerp(other.collider.transform.forward.normalized, other.collider.transform.up.normalized, AnglesFromForward).normalized;
+                var rb = other.collider.gameObject.GetComponent<Rigidbody>();
+                rb.AddForce(dir * JumpForce, ForceMode);
             }
+        }
 
-            var dir =Vector3.Lerp(other.collider.transform.forward.normalized, other.collider.transform.up.normalized, AnglesFromForward).normalized;
-            var rb = other.collider.gameObject.GetComponent<Rigidbody>();
-            rb.AddForce(dir * JumpForce, ForceMode);
+        public void TryScheduleDestroy()
+        {
+            if (Immutable || BoxType == BoxType.Concrete)
+                return;
+            
+            _scheduledDestroy = true;
+            _timeUntilDestroy = DestroyTime;
+        }
+
+        private void Update()
+        {
+            if (!_scheduledDestroy)
+                return;
+
+            _timeUntilDestroy -= Time.deltaTime;
+            
+            if (_timeUntilDestroy < 0f)
+                Destroy(gameObject);
         }
     }
 
