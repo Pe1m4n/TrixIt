@@ -4115,7 +4115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 898105917}
   m_Layer: 0
-  m_Name: ShotTrail
+  m_Name: JumpProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5150,7 +5150,7 @@ GameObject:
   - component: {fileID: 1342207961}
   - component: {fileID: 1342207960}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: JumpProjectileParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13155,7 +13155,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: NaN, y: 1.05e-43, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.8060262e+28, y: 2.2114261e+32, z: 7.2727937e+22, w: 1.09021394e+27}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
