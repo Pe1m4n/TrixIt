@@ -7,14 +7,17 @@ Animations:
       ForwardControlForce: 20000
       ForwardControlForceSpeedLimit: 4
       BackControlForce: -20000
-      BackControlForceSpeedLimit: 4
+      BackControlForceSpeedLimit: 4    
       #FlightSideControlForce: 1000
       #SideControlForceSpeedLimit: 2
       #passive side stabilization forces:
-      PassiveLeftForce: 1000
+      PassiveLeftForce: 1000      
       PassiveRightForce: 1000 
       PassiveLeftForceSpeedLimit: 0 
       PassiveRightForceSpeedLimit: 0
+      # VerticalControlForceEnabled: true 
+      # UpControlForce: 1000
+      # UpControlForceSpeedLimit: 4      
       #FlightBackForce: 500 //not implemented yet! (08.09.2021)
 - Animation: jump_up_armatura
   Intervals:
@@ -24,14 +27,17 @@ Animations:
       ForwardControlForce: 20000
       ForwardControlForceSpeedLimit: 4
       BackControlForce: -20000
-      BackControlForceSpeedLimit: 4
+      BackControlForceSpeedLimit: 4      
       #FlightSideControlForce: 1000
       #SideControlForceSpeedLimit: 2
       #passive side stabilization forces:
-      PassiveLeftForce: 1000 
+      PassiveLeftForce: 1000         
       PassiveRightForce: 1000 
       PassiveLeftForceSpeedLimit: 0 
       PassiveRightForceSpeedLimit: 0
+      # VerticalControlForceEnabled: true 
+      # UpControlForce: 1000
+      # UpControlForceSpeedLimit: 4       
       #FlightBackForce: 500 //not implemented yet! (08.09.2021)
 - Animation: jump_forward_run_armatura
   Intervals:
@@ -49,6 +55,9 @@ Animations:
       PassiveRightForce: 1000 
       PassiveLeftForceSpeedLimit: 0 
       PassiveRightForceSpeedLimit: 0
+      # VerticalControlForceEnabled: true 
+      # UpControlForce: 1000
+      # UpControlForceSpeedLimit: 4       
       #FlightBackForce: 500 //not implemented yet! (08.09.2021)
 - Animation: jump_forward_fastrun_armatura
   Intervals:
@@ -66,4 +75,7 @@ Animations:
       PassiveRightForce: 1000 
       PassiveLeftForceSpeedLimit: 0 
       PassiveRightForceSpeedLimit: 0
+      # VerticalControlForceEnabled: true 
+      # UpControlForce: 1000
+      # UpControlForceSpeedLimit: 4            
       #FlightBackForce: 500 //not implemented yet! (08.09.2021)
