@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Trixit
 {
@@ -14,16 +15,23 @@ namespace Trixit
 
         private bool _scheduledDestroy;
         private float _timeUntilDestroy;
-        
+        private Renderer _renderer;
+        private void Awake()
+        {
+            _renderer = GetComponent<Renderer>();
+        }
+
         public void SetType(BoxType boxType)
         {
             BoxType = boxType;
 
             switch (boxType)
             {
-                case BoxType.Simple:
+                case BoxType.Concrete:
+                    _renderer.material =  MaterialsHolder.Instance.ConcreteMaterial;
                     break;
                 case BoxType.Jumpy:
+                    _renderer.material = MaterialsHolder.Instance.JumpMaterial;
                     break;
             }
         }
