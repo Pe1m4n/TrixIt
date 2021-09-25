@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Trixit
 {
@@ -7,8 +6,9 @@ namespace Trixit
     public class FloorBox : MonoBehaviour
     {
         public BoxType BoxType;
-        public float JumpForce = 300f;
-        public ForceMode ForceMode;
+        public float AnglesFromForward = 30f;
+        public float JumpForce = 11f;
+        public ForceMode ForceMode = ForceMode.Acceleration;
         
         public void SetType(BoxType boxType)
         {
@@ -35,7 +35,7 @@ namespace Trixit
                 return;
             }
 
-            var dir = (other.transform.up.normalized + other.transform.forward.normalized).normalized;
+            var dir =Vector3.Lerp(other.collider.transform.forward.normalized, other.collider.transform.up.normalized, AnglesFromForward).normalized;
             var rb = other.collider.gameObject.GetComponent<Rigidbody>();
             rb.AddForce(dir * JumpForce, ForceMode);
         }
