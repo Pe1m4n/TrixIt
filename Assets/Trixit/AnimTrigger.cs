@@ -10,6 +10,11 @@ namespace Trixit
 
         private void OnTriggerEnter(Collider other)
         {
+            if (other.gameObject.layer != LayerMask.NameToLayer("Character"))
+            {
+                return;
+            }
+            
             _animator.SetTrigger(_triggerName);
         }
     }
