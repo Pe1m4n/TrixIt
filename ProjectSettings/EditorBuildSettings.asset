@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/_Trixit/_Levels/Level_4.unity
     guid: facbd8d92c8839545af398410eeac228
   - enabled: 1
+    path: Assets/_Trixit/_Levels/level_FINAL.unity
+    guid: 6e084713d7ca62f47a08e1bd46c47fd2
+  - enabled: 1
     path: Assets/_Trixit/_Levels/Tutorial_1.unity
     guid: 3ac259300af4f4b4eab8768d3d284190
   - enabled: 1

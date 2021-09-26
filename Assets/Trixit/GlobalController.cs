@@ -47,6 +47,7 @@ namespace Trixit
         public static void Start()
         {
             PlayLevel(0);
+            TotalScore = 0;
         }
 
         public static void PlayLevel(int index)
@@ -74,6 +75,7 @@ namespace Trixit
             {
                 Clear();
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                AudioPlayer.Instance.StopLocal();
             }   
             else
                 PlayLevel(CurrentLevel);
