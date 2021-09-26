@@ -1,12 +1,14 @@
 ﻿using System;
 using UniRx;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Trixit
 {
     [RequireComponent(typeof(Collider))]
     public class FloorBox : MonoBehaviour
     {
+        public const  int SCORE_FOR_PRIZE = 16;
         public BoxType BoxType;
         public bool Immutable;
         public float AnglesFromForward = 30f;
@@ -71,9 +73,26 @@ namespace Trixit
             
             if (BoxType == BoxType.Finish)
             {
+                if (GlobalController.CurrentLevel == GlobalController.LevelsCount - 1)
+                {
+                    TryGoFinishLevel();
+                    return;
+                }
                 AudioPlayer.Instance.PlaySound(_finishSound, true);
                 Observable.Timer(TimeSpan.FromSeconds(1f))
-                    .Subscribe(u => GlobalController.PlayLevel(++GlobalController.CurrentLevel));
+                    .Subscribe(u => RoundLifecycleUIController.Instance.ShowFinishLevel());
+            }
+        }
+
+        private void TryGoFinishLevel()
+        {
+            if (GlobalController.TotalScore < SCORE_FOR_PRIZE)
+            {
+                RoundLifecycleUIController.Instance.ShowLose();
+            }
+            else
+            {
+                SceneManager.LoadScene("level_FINAL");
             }
         }
 

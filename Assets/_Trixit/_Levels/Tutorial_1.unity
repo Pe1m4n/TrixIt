@@ -5258,6 +5258,10 @@ PrefabInstance:
       propertyPath: _jumpAmmo
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 657281111, guid: b09264b6a434b0d4ea2d42bcf96a997b, type: 3}
+      propertyPath: KeysThisRound
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 657281112, guid: b09264b6a434b0d4ea2d42bcf96a997b, type: 3}
       propertyPath: _locationMusic
       value: 
@@ -5847,7 +5851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7137134010735150377, guid: 6d82ff2957d382d459366ec75c446ada, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.67
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 7137134010735150377, guid: 6d82ff2957d382d459366ec75c446ada, type: 3}
       propertyPath: m_LocalPosition.z
