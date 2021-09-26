@@ -7,7 +7,7 @@ namespace Trixit
     {
         public static int TotalScore;
         public static int CurrentLevelScore;
-        public static int CurrentLevel = -1;
+        public static int CurrentLevel = -2;
         private static bool _menuOpened;
 
         public static int LevelsCount => _levels.Length;
@@ -53,7 +53,7 @@ namespace Trixit
         {
             Clear();
             CurrentLevel = index;
-            if (index >= LevelsCount)
+            if (index >= LevelsCount || index < 0)
             {
                 return;
             }
