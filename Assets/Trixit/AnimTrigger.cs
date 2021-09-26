@@ -7,6 +7,8 @@ namespace Trixit
     {
         [SerializeField] private string _triggerName;
         [SerializeField] private Animator _animator;
+        [SerializeField] private AudioClip _soundGlobal;
+        [SerializeField] private AudioClip _soundLocal;
 
         private void OnTriggerEnter(Collider other)
         {
@@ -14,6 +16,12 @@ namespace Trixit
             {
                 return;
             }
+
+            if (_soundGlobal != null)
+                AudioPlayer.Instance.PlaySound(_soundGlobal, true);
+
+            if (_soundLocal != null)
+                AudioPlayer.Instance.PlaySound(_soundLocal);
             
             _animator.SetTrigger(_triggerName);
         }
