@@ -8,7 +8,7 @@ namespace Trixit
     [RequireComponent(typeof(Collider))]
     public class FloorBox : MonoBehaviour
     {
-        public const  int SCORE_FOR_PRIZE = 16;
+        public const int SCORE_FOR_PRIZE = 18;
         public BoxType BoxType;
         public bool Immutable;
         public float AnglesFromForward = 30f;
