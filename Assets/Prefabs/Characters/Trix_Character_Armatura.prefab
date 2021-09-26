@@ -3019,6 +3019,7 @@ MonoBehaviour:
   _camera: {fileID: 8695687331072067336}
   _jumpProjectile: {fileID: -8505253254985282089, guid: 2ddf0a96cf7eb154abbd7f3162f016e9, type: 3}
   _concreteProjectile: {fileID: 4485384047788874109, guid: 1a4c0c4ec86189941ad22ec812cc8a4c, type: 3}
+  _animator: {fileID: 5293010409815234132}
 --- !u!114 &657281114
 MonoBehaviour:
   m_ObjectHideFlags: 0

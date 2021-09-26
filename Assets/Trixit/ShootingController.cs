@@ -8,6 +8,7 @@ namespace Trixit
         [SerializeField] private Camera _camera;
         [SerializeField] private Projectile _jumpProjectile;
         [SerializeField] private Projectile _concreteProjectile;
+        [SerializeField] private Animator _animator;
         
         private void Update()
         {
@@ -19,6 +20,11 @@ namespace Trixit
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 Time.timeScale = 1f;
+            }
+
+            if (DebugAnimUI.Instance != null)
+            {
+                DebugAnimUI.Instance.SetInfo(_animator.GetCurrentAnimatorClipInfo(0)[0].clip.name);
             }
             
             if (_shootingPivot.transform.position.y < -20f)
