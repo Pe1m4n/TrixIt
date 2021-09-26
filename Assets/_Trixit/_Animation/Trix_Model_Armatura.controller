@@ -29,7 +29,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shot
+  m_Name: Bow
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -42,7 +42,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6284af1fee90efe40b76146b4c4ce74d, type: 2}
+  m_Motion: {fileID: 7400000, guid: 86f588a1c598cf547a5e1ff211e4c01b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

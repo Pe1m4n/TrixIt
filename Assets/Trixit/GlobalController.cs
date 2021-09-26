@@ -7,8 +7,10 @@ namespace Trixit
     {
         public static int TotalScore;
         public static int CurrentLevelScore;
-        public static int CurrentLevel = -1;
+        public static int CurrentLevel = -2;
         private static bool _menuOpened;
+
+        public static int LevelsCount => _levels.Length;
 
         public static bool MenuOpened
         {
@@ -51,7 +53,12 @@ namespace Trixit
         {
             Clear();
             CurrentLevel = index;
+            if (index >= LevelsCount || index < 0)
+            {
+                return;
+            }
             SceneManager.LoadScene(_levels[index]);
+            AudioPlayer.Instance.StopLocal();
         }
 
         private static void Clear()

@@ -160,3 +160,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Finish: 0
+  _vfx: {fileID: 8645223359193483380, guid: 3814b48460757424f9122c34ab140271, type: 3}
+  _sound1: {fileID: 8300000, guid: 3222e2238c1478346846b13e2a99278a, type: 3}
+  _sound2: {fileID: 8300000, guid: 67788f84f289316418b97052a63c657f, type: 3}
