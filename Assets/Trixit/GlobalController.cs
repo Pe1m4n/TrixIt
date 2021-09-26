@@ -7,6 +7,7 @@ namespace Trixit
         public static int TotalScore;
         public static int CurrentLevelScore;
         public static int CurrentLevel = -1;
+        public static bool MenuOpened;
         
         private static readonly string[] _levels = new[]
         {
@@ -33,15 +34,27 @@ namespace Trixit
 
         public static void PlayLevel(int index)
         {
+            Clear();
             CurrentLevel = index;
-            CurrentLevelScore = 0;
             SceneManager.LoadScene(_levels[index]);
+        }
+
+        private static void Clear()
+        {
+            CurrentLevelScore = 0;
+            MenuOpened = false;
         }
         
         public static void Restart()
         {
             TotalScore -= CurrentLevelScore;
-            PlayLevel(CurrentLevel);
+            if (CurrentLevel < 0)
+            {
+                Clear();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }   
+            else
+                PlayLevel(CurrentLevel);
         }
     }
 }

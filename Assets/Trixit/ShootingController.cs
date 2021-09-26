@@ -17,7 +17,7 @@ namespace Trixit
                 return;
             }
             
-            if (!Input.GetKeyDown(KeyCode.Mouse0) && !Input.GetKeyDown(KeyCode.Mouse1))
+            if (GlobalController.MenuOpened || !Input.GetKeyDown(KeyCode.Mouse0) && !Input.GetKeyDown(KeyCode.Mouse1))
             {
                 return;
             }
