@@ -73,6 +73,10 @@ namespace Trixit
                 AudioPlayer.Instance.PlaySound(_finishSound, true);
                 Observable.Timer(TimeSpan.FromSeconds(1f))
                     .Subscribe(u => GlobalController.PlayLevel(++GlobalController.CurrentLevel));
+                if (_animator != null)
+                {
+                    _animator.SetTrigger("ReadyToWatch");
+                }
             }
         }
 
