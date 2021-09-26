@@ -131,3 +131,6 @@ MonoBehaviour:
   JumpForce: 12.4
   ForceMode: 2
   DestroyTime: 1
+  _bounceSound: {fileID: 8300000, guid: ab0d088c7b251c441876236ae6ec6143, type: 3}
+  _landingHeavy: {fileID: 8300000, guid: f8493908cf55c79448f503ee61cec26a, type: 3}
+  _landing: {fileID: 8300000, guid: 015faa097f4da75458cb6167f87c4dc8, type: 3}

@@ -24,6 +24,7 @@ public class TrixCharacterController : MonoBehaviour
 	public BalanceWatcher balanceWatcher;
 	public FallingBehaviourControl fallingBehaviourControl;
 	public RootMotion.Dynamics.PropMuscle rightHandPropMuscle;
+	public bool WasBounced;
 
 	[RootMotion.LargeHeader("Config")]
 	public TrixCharacterControllerConfig config;

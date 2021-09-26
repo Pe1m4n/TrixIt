@@ -9,6 +9,8 @@ namespace Trixit
         [SerializeField] private Projectile _jumpProjectile;
         [SerializeField] private Projectile _concreteProjectile;
         [SerializeField] private Animator _animator;
+
+        public bool WasBounced;
         
         private void Update()
         {

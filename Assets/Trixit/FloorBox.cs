@@ -10,8 +10,12 @@ namespace Trixit
         public bool Immutable;
         public float AnglesFromForward = 30f;
         public float JumpForce = 11f;
+        public float JumpSecond = 11f;
         public ForceMode ForceMode = ForceMode.Acceleration;
         public float DestroyTime = 2f;
+        [SerializeField] private AudioClip _bounceSound;
+        [SerializeField] private AudioClip _landingHeavy;
+        [SerializeField] private AudioClip _landing;
 
         private bool _scheduledDestroy;
         private float _timeUntilDestroy;
@@ -46,17 +50,26 @@ namespace Trixit
                 return;
             }
 
+            var controller = other.collider.GetComponent<TrixCharacterController>();
             if (BoxType == BoxType.Jumpy)
             {
+                controller.WasBounced = true;
+                AudioPlayer.Instance.PlaySound(_bounceSound);
                 var dir = Vector3.Lerp(other.collider.transform.forward.normalized, other.collider.transform.up.normalized, AnglesFromForward).normalized;
                 var rb = other.collider.gameObject.GetComponent<Rigidbody>();
-                rb.AddForce(dir * JumpForce, ForceMode);
+                rb.AddForce(dir * (controller.WasBounced? JumpSecond : JumpForce), ForceMode);
                 TryScheduleDestroy();
+                return;
             }
 
+            var clip = controller.WasBounced ? _landingHeavy : _landing;
+            AudioPlayer.Instance.PlaySound(clip);
+            controller.WasBounced = false;
+            
             if (BoxType == BoxType.Finish)
             {
                 GlobalController.PlayLevel(++GlobalController.CurrentLevel);
+                return;
             }
         }
 
