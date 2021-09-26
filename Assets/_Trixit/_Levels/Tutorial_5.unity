@@ -3376,6 +3376,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4521607807747918671, guid: c543343e95548744f8ebe79fce4ca1ce, type: 3}
+      propertyPath: BoxType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521607807747918671, guid: c543343e95548744f8ebe79fce4ca1ce, type: 3}
       propertyPath: Immutable
       value: 1
       objectReference: {fileID: 0}

@@ -1,4 +1,5 @@
 ﻿using System;
+using UniRx;
 using UnityEngine;
 
 namespace Trixit
@@ -69,8 +70,9 @@ namespace Trixit
             
             if (BoxType == BoxType.Finish)
             {
-                GlobalController.PlayLevel(++GlobalController.CurrentLevel);
-                return;
+                AudioPlayer.Instance.PlaySound(_finishSound, true);
+                Observable.Timer(TimeSpan.FromSeconds(1f))
+                    .Subscribe(u => GlobalController.PlayLevel(++GlobalController.CurrentLevel));
             }
         }
 

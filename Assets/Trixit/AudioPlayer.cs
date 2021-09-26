@@ -4,6 +4,7 @@ namespace Trixit
 {
     public class AudioPlayer : MonoBehaviour
     {
+        private static float VOLUME = 0.5f;
         private static AudioPlayer _instance;
 
         public static AudioPlayer Instance
@@ -26,7 +27,9 @@ namespace Trixit
         {
             _sourceGlobal = gameObject.AddComponent<AudioSource>();
             _sourceLocal = gameObject.AddComponent<AudioSource>();
-            
+
+            _sourceGlobal.volume = VOLUME;
+            _sourceLocal.volume = VOLUME;
             DontDestroyOnLoad(gameObject);
             _instance = this;
         }
