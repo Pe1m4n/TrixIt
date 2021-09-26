@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Trixit
@@ -9,9 +10,16 @@ namespace Trixit
         [SerializeField] private Projectile _jumpProjectile;
         [SerializeField] private Projectile _concreteProjectile;
         [SerializeField] private Animator _animator;
+        [SerializeField] private AudioClip _locationMusic;
 
         public bool WasBounced;
-        
+
+        private void Start()
+        {
+            if (_locationMusic != null)
+                AudioPlayer.Instance.PlaySound(_locationMusic);
+        }
+
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
