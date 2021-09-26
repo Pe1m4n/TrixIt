@@ -52,6 +52,7 @@ namespace Trixit
             Clear();
             CurrentLevel = index;
             SceneManager.LoadScene(_levels[index]);
+            AudioPlayer.Instance.StopLocal();
         }
 
         private static void Clear()
