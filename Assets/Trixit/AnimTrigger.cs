@@ -26,7 +26,8 @@ namespace Trixit
             if (_soundLocal != null)
                 AudioPlayer.Instance.PlaySound(_soundLocal);
             
-            _animator.SetTrigger(_triggerName);
+            if (_animator != null)
+                _animator.SetTrigger(_triggerName);
         }
     }
 }
