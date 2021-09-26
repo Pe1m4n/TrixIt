@@ -6,12 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: Assets/_Trixit/_Levels/EntryPoint.unity
+    guid: ecdcb461c39ba46489e08922c1ae5ba6
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
-    guid: 68c05a3d000a42b4bb8926738c8e6ff6
+    path: Assets/_Trixit/_Levels/Level_1.unity
+    guid: 478d9e0c40c85d943a0c5278d5eb55bb
   - enabled: 1
-    path: Assets/Scenes/Levels/Demo.unity
-    guid: 6188f81e9d7264540a7321382c7c7d86
+    path: Assets/_Trixit/_Levels/Level_2.unity
+    guid: 3c8e8b292bb9db544bf0f0a73e735157
+  - enabled: 1
+    path: Assets/_Trixit/_Levels/Level_3.unity
+    guid: 5a6803233f3118c4eac12d21948b99ef
+  - enabled: 1
+    path: Assets/_Trixit/_Levels/Level_4.unity
+    guid: facbd8d92c8839545af398410eeac228
+  - enabled: 1
+    path: Assets/_Trixit/_Levels/Tutorial_1.unity
+    guid: 3ac259300af4f4b4eab8768d3d284190
+  - enabled: 1
+    path: Assets/_Trixit/_Levels/Tutorial_2.unity
+    guid: 3037be23ba1111540a2dcd59ba8676c2
+  - enabled: 1
+    path: Assets/_Trixit/_Levels/Tutorial_3.unity
+    guid: 35ea46c71c03a4245a540a2080d0394c
+  - enabled: 1
+    path: Assets/_Trixit/_Levels/Tutorial_4.unity
+    guid: ab7cb28185bd12b40a624e66d916113c
+  - enabled: 1
+    path: Assets/_Trixit/_Levels/Tutorial_5.unity
+    guid: c2a4fbdb9d8c96648b3b20fedabbc464
   m_configObjects: {}

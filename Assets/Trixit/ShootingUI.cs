@@ -17,7 +17,7 @@ namespace Trixit
                 _root.SetActive(false);
                 return;
             }
-
+            _root.SetActive(true);
             var playerState = StateHolder.Instance.PlayerState;
 
             _greenText.text = $"{playerState.Ammo[BoxType.Jumpy]}";

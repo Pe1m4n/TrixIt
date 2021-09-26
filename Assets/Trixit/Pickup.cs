@@ -21,6 +21,7 @@ namespace Trixit
             else
             {
                 GlobalController.CurrentLevelScore++;
+                GlobalController.TotalScore++;
             }
             Destroy(gameObject);
         }

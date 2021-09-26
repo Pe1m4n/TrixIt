@@ -10,20 +10,20 @@ namespace Trixit
         
         private static readonly string[] _levels = new[]
         {
-            "TemplateScene"
-            // "tutorial_level_1",
-            // "tutorial_level_2",
-            // "tutorial_level_3",
-            // "tutorial_level_4",
-            // "Level_1",
-            // "Level_2",
-            // "Level_3",
-            // "Level_4",
-            // "Level_5",
-            // "Level_6",
-            // "Level_7",
-            // "Level_8",
-            // "Level_9",
+            "Tutorial_1",
+            "Tutorial_2",
+            "Tutorial_3",
+            "Tutorial_4",
+            "Tutorial_5",
+            "Level_1",
+            "Level_2",
+            "Level_3",
+            "Level_4",
+            "Level_5",
+            "Level_6",
+            "Level_7",
+            "Level_8",
+            "Level_9",
         };
 
         public static void Start()

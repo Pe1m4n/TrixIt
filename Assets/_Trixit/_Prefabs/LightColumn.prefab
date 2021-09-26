@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3367436447894732885}
   - component: {fileID: 2705023964922585718}
   - component: {fileID: 2928641548566288401}
+  - component: {fileID: 8785520135338338094}
+  - component: {fileID: 7898724522024277482}
   m_Layer: 0
   m_Name: LightColumn
   m_TagString: Untagged
@@ -4804,3 +4806,29 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!65 &8785520135338338094
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5172480807832856175}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 30, z: 5}
+  m_Center: {x: 0, y: 12.500002, z: -0.0000014305115}
+--- !u!114 &7898724522024277482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5172480807832856175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f18593e7bfef41faa91ac1c8f5caf9b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Finish: 1
