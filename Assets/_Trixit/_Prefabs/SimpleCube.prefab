@@ -128,8 +128,8 @@ MonoBehaviour:
   BoxType: 1
   Immutable: 1
   AnglesFromForward: 0.5
-  JumpForce: 12.4
-  JumpSecond: 11
+  JumpForce: 13.5
+  JumpSecond: 11.7
   ForceMode: 2
   DestroyTime: 1
   _bounceSound: {fileID: 8300000, guid: ab0d088c7b251c441876236ae6ec6143, type: 3}
