@@ -5234,6 +5234,10 @@ PrefabInstance:
       propertyPath: _jumpAmmo
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 657281112, guid: b09264b6a434b0d4ea2d42bcf96a997b, type: 3}
+      propertyPath: _locationMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 325aee11bfebbcc48bc0d94206cacc57, type: 3}
     - target: {fileID: 166943596256915842, guid: b09264b6a434b0d4ea2d42bcf96a997b, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 0.00000011920929
@@ -10015,6 +10019,10 @@ PrefabInstance:
     - target: {fileID: 4521607807747918669, guid: c543343e95548744f8ebe79fce4ca1ce, type: 3}
       propertyPath: m_Name
       value: SimpleCube (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521607807747918671, guid: c543343e95548744f8ebe79fce4ca1ce, type: 3}
+      propertyPath: BoxType
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4521607807747918671, guid: c543343e95548744f8ebe79fce4ca1ce, type: 3}
       propertyPath: Immutable
