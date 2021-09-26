@@ -87,16 +87,16 @@ namespace Trixit
                 _animator.SetTrigger("Destroy");
         }
 
-        private void Update()
-        {
-            if (!_scheduledDestroy)
-                return;
-
-            _timeUntilDestroy -= Time.deltaTime;
-            
-            if (_timeUntilDestroy < 0f)
-                Destroy(gameObject);
-        }
+        // private void Update()
+        // {
+        //     if (!_scheduledDestroy)
+        //         return;
+        //
+        //     _timeUntilDestroy -= Time.deltaTime;
+        //     
+        //     if (_timeUntilDestroy < 0f)
+        //         Destroy(gameObject);
+        // }
     }
 
     public enum BoxType
