@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4521607807747918657}
   - component: {fileID: 4521607807747918670}
   - component: {fileID: 4521607807747918671}
+  - component: {fileID: 5096022446786047159}
   m_Layer: 0
   m_Name: SimpleCube
   m_TagString: Untagged
@@ -136,3 +137,23 @@ MonoBehaviour:
   _landingHeavy: {fileID: 8300000, guid: f8493908cf55c79448f503ee61cec26a, type: 3}
   _landing: {fileID: 8300000, guid: 015faa097f4da75458cb6167f87c4dc8, type: 3}
   _finishSound: {fileID: 8300000, guid: 8d910c3be16cd5541a812fc62c1c8b36, type: 3}
+  _finishAnim: {fileID: 0}
+--- !u!95 &5096022446786047159
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4521607807747918669}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 708fddf5d73950a44900509c0cc61c46, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
