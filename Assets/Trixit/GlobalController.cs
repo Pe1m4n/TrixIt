@@ -7,7 +7,7 @@ namespace Trixit
     {
         public static int TotalScore;
         public static int CurrentLevelScore;
-        public static int CurrentLevel = -2;
+        public static int CurrentLevel = -1;
         private static bool _menuOpened;
 
         public static int LevelsCount => _levels.Length;
