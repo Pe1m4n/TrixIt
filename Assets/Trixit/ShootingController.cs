@@ -11,6 +11,16 @@ namespace Trixit
         
         private void Update()
         {
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                Time.timeScale = 0.2f;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                Time.timeScale = 1f;
+            }
+            
             if (_shootingPivot.transform.position.y < -20f)
             {
                 GlobalController.Restart();
