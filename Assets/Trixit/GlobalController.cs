@@ -38,6 +38,7 @@ namespace Trixit
             "Level_1",
             "Level_5",
             "Level_3",
+            "Level_6",
         };
 
         public static void Start()
