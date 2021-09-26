@@ -18,7 +18,10 @@ namespace Trixit
             }
 
             if (_soundGlobal != null)
+            {
+                AudioPlayer.Instance.StopLocal();
                 AudioPlayer.Instance.PlaySound(_soundGlobal, true);
+            }
 
             if (_soundLocal != null)
                 AudioPlayer.Instance.PlaySound(_soundLocal);
