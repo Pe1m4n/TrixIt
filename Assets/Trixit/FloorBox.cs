@@ -19,6 +19,8 @@ namespace Trixit
         [SerializeField] private AudioClip _landing;
         [SerializeField] private AudioClip _finishSound;
 
+        [SerializeField] private Animator _finishAnim;
+
         private bool _scheduledDestroy;
         private float _timeUntilDestroy;
         private Renderer _renderer;
@@ -73,9 +75,9 @@ namespace Trixit
                 AudioPlayer.Instance.PlaySound(_finishSound, true);
                 Observable.Timer(TimeSpan.FromSeconds(1f))
                     .Subscribe(u => GlobalController.PlayLevel(++GlobalController.CurrentLevel));
-                if (_animator != null)
+                if (_finishAnim != null)
                 {
-                    _animator.SetTrigger("ReadyToWatch");
+                    _finishAnim.SetTrigger("ReadyToWatch");
                 }
             }
         }
