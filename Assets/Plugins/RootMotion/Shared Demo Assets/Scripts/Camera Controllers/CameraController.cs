@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections;
 
@@ -6,7 +7,15 @@ namespace RootMotion {
 	/// <summary>
 	/// 3rd person camera controller.
 	/// </summary>
-	public class CameraController : MonoBehaviour {
+	public class CameraController : MonoBehaviour
+	{
+
+		public static CameraController Instance;
+		public bool preventRotation;
+		private void OnDestroy()
+		{
+			Instance = null;
+		}
 
 		// When to update the camera?
 		[System.Serializable]
@@ -95,7 +104,9 @@ namespace RootMotion {
         }
 
 		// Initiate, set the params to the current transformation of the camera relative to the target
-		protected virtual void Awake () {
+		protected virtual void Awake ()
+		{
+			Instance = this;
 			Vector3 angles = transform.eulerAngles;
 			x = angles.y;
 			y = angles.x;
@@ -141,6 +152,10 @@ namespace RootMotion {
 			Cursor.lockState = lockCursor? CursorLockMode.Locked: CursorLockMode.None;
 			Cursor.visible = lockCursor? false: true;
 
+			if (preventRotation)
+			{
+				return;
+			}
 			// Should we rotate the camera?
 			bool rotate = (!dontRotateOnLeftAlt || !Input.GetKey(KeyCode.LeftAlt)) && ( rotateAlways || (rotateOnLeftButton && Input.GetMouseButton(0)) || (rotateOnRightButton && Input.GetMouseButton(1)) || (rotateOnMiddleButton && Input.GetMouseButton(2)));
 

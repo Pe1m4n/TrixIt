@@ -1852,9 +1852,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7420686814158048234}
-        m_TargetAssemblyTypeName: Trixit.MenuUi, Assembly-CSharp
-        m_MethodName: Restart
+      - m_Target: {fileID: 3066683024889452524}
+        m_TargetAssemblyTypeName: Trixit.TutorialPanelUi, Assembly-CSharp
+        m_MethodName: Close
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2021,9 +2021,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7420686814158048234}
-        m_TargetAssemblyTypeName: Trixit.MenuUi, Assembly-CSharp
-        m_MethodName: Restart
+      - m_Target: {fileID: 8662507362013891602}
+        m_TargetAssemblyTypeName: Trixit.TutorialPanelUi, Assembly-CSharp
+        m_MethodName: Close
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3594,6 +3594,7 @@ GameObject:
   - component: {fileID: 264273279164818918}
   - component: {fileID: 4861246065508079578}
   - component: {fileID: 3474707157434347595}
+  - component: {fileID: 8662507362013891602}
   m_Layer: 5
   m_Name: TutorialPanel 2
   m_TagString: Untagged
@@ -3663,6 +3664,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8662507362013891602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755679276141235426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8debee41e8445b1beeddaa0b38b5109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1798886418425189904
 GameObject:
   m_ObjectHideFlags: 0
@@ -15963,6 +15976,7 @@ GameObject:
   - component: {fileID: 871151313195753688}
   - component: {fileID: 1619975714205429605}
   - component: {fileID: 488659978488152712}
+  - component: {fileID: 3066683024889452524}
   m_Layer: 5
   m_Name: TutorialPanel 1
   m_TagString: Untagged
@@ -16031,6 +16045,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3066683024889452524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7795801429933958005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8debee41e8445b1beeddaa0b38b5109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7871845422519910474
 GameObject:
   m_ObjectHideFlags: 0

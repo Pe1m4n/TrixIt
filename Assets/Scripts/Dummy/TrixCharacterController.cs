@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Trixit;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -689,6 +690,11 @@ public class TrixCharacterController : MonoBehaviour
 
 	private void RotateCharacter(float aimAngle, float camAngle)
 	{
+		if (GlobalController.MenuOpened)
+		{
+			return;
+		}
+		
 		if (!Helpers.IsOneOfTheAnimations(animator, config.jumpAnimNames.ToArray(), 0))
 		{
 			jumpStartRotation = NormalizeAngle(charRigidbody.rotation.eulerAngles.y);

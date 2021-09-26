@@ -1,3 +1,4 @@
+using RootMotion;
 using UnityEngine.SceneManagement;
 
 namespace Trixit
@@ -7,7 +8,21 @@ namespace Trixit
         public static int TotalScore;
         public static int CurrentLevelScore;
         public static int CurrentLevel = -1;
-        public static bool MenuOpened;
+        private static bool _menuOpened;
+
+        public static bool MenuOpened
+        {
+            get => _menuOpened;
+            set
+            {
+                _menuOpened = value;
+                if (CameraController.Instance != null)
+                {
+                    CameraController.Instance.lockCursor = !_menuOpened;
+                    CameraController.Instance.preventRotation = _menuOpened;
+                }
+            }
+        }
         
         private static readonly string[] _levels = new[]
         {
