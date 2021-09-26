@@ -4,9 +4,9 @@ Animations:
   - Func_air:
       #horizontal flight control
       ControlForceEnabled: true
-      ForwardControlForce: 25000
+      ForwardControlForce: 30000
       # ForwardControlForceSpeedLimit: 4
-      BackControlForce: -25000
+      BackControlForce: -30000
       # BackControlForceSpeedLimit: 4    
       #FlightSideControlForce: 1000
       #SideControlForceSpeedLimit: 2
@@ -24,9 +24,9 @@ Animations:
   - Func_air:
       #horizontal flight control
       ControlForceEnabled: true
-      ForwardControlForce: 25000
+      ForwardControlForce: 30000
       # ForwardControlForceSpeedLimit: 4
-      BackControlForce: -25000
+      BackControlForce: -30000
       # BackControlForceSpeedLimit: 4      
       #FlightSideControlForce: 1000
       #SideControlForceSpeedLimit: 2
