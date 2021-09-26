@@ -771,6 +771,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c543343e95548744f8ebe79fce4ca1ce, type: 3}
+--- !u!1 &50936640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4521607807747918669, guid: c543343e95548744f8ebe79fce4ca1ce, type: 3}
+  m_PrefabInstance: {fileID: 1949764049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &50936641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50936640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99309171267e4f5b9265911df53edf1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _triggerName: ReadyToWatch
+  _animator: {fileID: 1201301057}
+--- !u!65 &50936642
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50936640}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.99999994, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &62487902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7518,6 +7550,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4521607807747918668, guid: c543343e95548744f8ebe79fce4ca1ce, type: 3}
   m_PrefabInstance: {fileID: 537299995}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1201301057 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 2840e7b4a2e7a6f4b8eb87afb1b086fb, type: 3}
+  m_PrefabInstance: {fileID: 407693041}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1214330011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12110,6 +12147,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4521607807747918669, guid: c543343e95548744f8ebe79fce4ca1ce, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521607807747918671, guid: c543343e95548744f8ebe79fce4ca1ce, type: 3}
+      propertyPath: BoxType
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4521607807747918671, guid: c543343e95548744f8ebe79fce4ca1ce, type: 3}
