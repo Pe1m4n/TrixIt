@@ -109,7 +109,7 @@ MonoBehaviour:
   target: {fileID: 0}
   rotationSpace: {fileID: 0}
   updateMode: 3
-  lockCursor: 0
+  lockCursor: 1
   smoothFollow: 1
   offset: {x: 0, y: 1.8, z: -0.4}
   smoothFollowSpeed: 10
