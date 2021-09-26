@@ -790,6 +790,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _triggerName: ReadyToWatch
   _animator: {fileID: 1201301057}
+  _soundGlobal: {fileID: 8300000, guid: ab0d088c7b251c441876236ae6ec6143, type: 3}
+  _soundLocal: {fileID: 0}
 --- !u!65 &50936642
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11767,6 +11769,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4521607807747918668, guid: c543343e95548744f8ebe79fce4ca1ce, type: 3}
   m_PrefabInstance: {fileID: 1889601024}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1906864085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4521607807747918669, guid: c543343e95548744f8ebe79fce4ca1ce, type: 3}
+  m_PrefabInstance: {fileID: 4521607808483916745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1906864086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906864085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99309171267e4f5b9265911df53edf1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _triggerName: 
+  _animator: {fileID: 0}
+  _soundGlobal: {fileID: 0}
+  _soundLocal: {fileID: 8300000, guid: 29d86f15c4e673046b5129aa3c72f6a1, type: 3}
+--- !u!65 &1906864087
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906864085}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1910748502
 PrefabInstance:
   m_ObjectHideFlags: 0
