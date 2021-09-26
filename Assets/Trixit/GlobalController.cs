@@ -33,15 +33,12 @@ namespace Trixit
             "Tutorial_3",
             "Tutorial_4",
             "Tutorial_5",
-            "Level_1",
-            "Level_2",
-            "Level_3",
             "Level_4",
+            "Level_2",
+            "Level_1",
             "Level_5",
+            "Level_3",
             "Level_6",
-            "Level_7",
-            "Level_8",
-            "Level_9",
         };
 
         public static void Start()
