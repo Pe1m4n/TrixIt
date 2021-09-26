@@ -10,6 +10,7 @@ namespace Trixit
         public readonly PlayerState PlayerState = new PlayerState();
         [SerializeField] private int _jumpAmmo;
         [SerializeField] private int _hardAmmo;
+        [SerializeField] private int _keysThisRound;
         
         private void Awake()
         {
