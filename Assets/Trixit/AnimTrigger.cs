@@ -10,9 +10,11 @@ namespace Trixit
         [SerializeField] private AudioClip _soundGlobal;
         [SerializeField] private AudioClip _soundLocal;
 
+        private bool _triggered;
+
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.layer != LayerMask.NameToLayer("Character"))
+            if (_triggered || other.gameObject.layer != LayerMask.NameToLayer("Character"))
             {
                 return;
             }
@@ -28,6 +30,8 @@ namespace Trixit
             
             if (_animator != null)
                 _animator.SetTrigger(_triggerName);
+            
+            _triggered = true;
         }
     }
 }
