@@ -16,9 +16,12 @@ namespace Trixit
         private bool _scheduledDestroy;
         private float _timeUntilDestroy;
         private Renderer _renderer;
+        private Animator _animator;
+        
         private void Awake()
         {
             _renderer = GetComponent<Renderer>();
+            _animator = GetComponent<Animator>();
         }
 
         public void SetType(BoxType boxType)
@@ -45,10 +48,15 @@ namespace Trixit
 
             if (BoxType == BoxType.Jumpy)
             {
-                var dir =Vector3.Lerp(other.collider.transform.forward.normalized, other.collider.transform.up.normalized, AnglesFromForward).normalized;
+                var dir = Vector3.Lerp(other.collider.transform.forward.normalized, other.collider.transform.up.normalized, AnglesFromForward).normalized;
                 var rb = other.collider.gameObject.GetComponent<Rigidbody>();
                 rb.AddForce(dir * JumpForce, ForceMode);
                 TryScheduleDestroy();
+            }
+
+            if (BoxType == BoxType.Finish)
+            {
+                GlobalController.PlayLevel(++GlobalController.CurrentLevel);
             }
         }
 
@@ -59,6 +67,8 @@ namespace Trixit
             
             _scheduledDestroy = true;
             _timeUntilDestroy = DestroyTime;
+            if (_animator != null)
+                _animator.SetTrigger("Destroy");
         }
 
         private void Update()
@@ -77,6 +87,7 @@ namespace Trixit
     {
         Concrete,
         Simple,
-        Jumpy
+        Jumpy,
+        Finish
     }
 }

@@ -16,7 +16,7 @@ namespace Trixit
 
             if (Finish)
             {
-                GlobalController.PlayLevel(++GlobalController.CurrentLevel);
+                return;
             }
             else
             {
