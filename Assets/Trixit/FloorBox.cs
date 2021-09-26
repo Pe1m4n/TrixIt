@@ -55,16 +55,13 @@ namespace Trixit
             var controller = other.collider.GetComponent<TrixCharacterController>();
             if (BoxType == BoxType.Jumpy)
             {
-                if (!_scheduledDestroy)
-                {
-                    var dir = Vector3.Lerp(other.collider.transform.forward.normalized,
-                        other.collider.transform.up.normalized, AnglesFromForward).normalized;
-                    var rb = other.collider.gameObject.GetComponent<Rigidbody>();
-                    rb.AddForce(dir * (controller.WasBounced ? JumpSecond : JumpForce), ForceMode);
-                    TryScheduleDestroy();
-                    controller.WasBounced = true;
-                    AudioPlayer.Instance.PlaySound(_bounceSound);
-                }
+                var dir = Vector3.Lerp(other.collider.transform.forward.normalized,
+                    other.collider.transform.up.normalized, AnglesFromForward).normalized;
+                var rb = other.collider.gameObject.GetComponent<Rigidbody>();
+                rb.AddForce(dir * (controller.WasBounced ? JumpSecond : JumpForce), ForceMode);
+                TryScheduleDestroy();
+                controller.WasBounced = true;
+                AudioPlayer.Instance.PlaySound(_bounceSound);
                 return;
             }
 

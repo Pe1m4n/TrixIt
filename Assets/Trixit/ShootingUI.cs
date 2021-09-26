@@ -9,12 +9,14 @@ namespace Trixit
         [SerializeField] private Text _greenText;
         [SerializeField] private Text _blueText;
         [SerializeField] private GameObject _root;
+        [SerializeField] private GameObject _crosshair;
 
         private void Update()
         {
             if (StateHolder.Instance == null || StateHolder.Instance.PlayerState.Ammo.All(p => p.Value <= 0))
             {
                 _root.SetActive(false);
+                _crosshair.SetActive(false);
                 return;
             }
             _root.SetActive(true);
